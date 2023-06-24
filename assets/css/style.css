@@ -505,6 +505,15 @@ section {
   color: #5fcf80;
 }
 
+.breadcrums-lite1 {
+  border-color: #5fcf80;
+  margin-top: 20px;
+  text-align: center;
+  background: #fff;
+  padding: 20px 0;
+  color: #5fcf80;
+}
+
 @media (max-width: 992px) {
   .breadcrumbs {
     margin-top: 63px;
