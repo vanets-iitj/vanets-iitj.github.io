@@ -1,693 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8">
+  <title>Publications 2025</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
 
-  <title>Publications</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    .breadcrums-lite1 {
+      background-color: #f8f8f8;
+      padding: 20px 0;
+      border-bottom: 2px solid #ddd;
+    }
 
-  <!-- Favicons -->
-  <link href="../assets/img/favicon.png" rel="icon">
-  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    .breadcrums-lite1 h2 {
+      text-align: center;
+    }
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    .tabs {
+      width: 80%;
+      margin: 20px auto;
+    }
 
-  <!-- Vendor CSS Files -->
-  <link href="../assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    .tab-buttons {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
 
-  <!-- Template Main CSS File -->
-  <link href="../assets/css/style.css" rel="stylesheet">
+    .tab-buttons button {
+      background-color: #eee;
+      border: 1px solid #ccc;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-size: 16px;
+    }
+
+    .tab-buttons button.active {
+      background-color: #4285f4;
+      color: white;
+    }
+
+    .tab-content {
+      display: none;
+      border: 1px solid #ccc;
+      padding: 15px;
+      background-color: #fff;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    .tab-content ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .tab-content li a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .tab-content li a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
-
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center">
-
-      <h1 class="logo me-auto"><a href="index.html">VANETs Lab</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="people.html">People</a></li>
-          <li><a class="active" href="publications.html">Publications</a></li>
-          <li><a href="projects.html">Research Projects</a></li>
-          <li><a href="achievements.html">Achievements</a></li>
-          <li><a href="seminars.html">News & Highlights</a></li>
-          <li><a href="collabs.html">Collaborations</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-      <!-- <a href="courses.html" class="get-started-btn">Get Started</a> -->
-
+  <div class="breadcrums-lite1">
+    <div class="container">
+      <h2>
+        <u>Selected Transactions / Journals Publications / Conferences</u>
+      </h2>
     </div>
-  </header>
-  <!-- End Header -->
-
-  <main id="main">
-
-    <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs" data-aos="fade-in">
-      <div class="container">
-        <h2>Publications</h2>
-        <!-- <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p> -->
-      </div>
-    </div><!-- End Breadcrumbs -->
-
-<!-- ======= Breadcrumb Lite - Selected Transactions / Journals Publications ======= -->
-<div class="breadcrums-lite1">
-  <div class="container">
-    <h2>
-      <u>Selected Transactions / Journals Publications / Conferences</u>
-    </h2>
   </div>
-</div><!-- End Breadcrumb Lite -->
-    <!-- ======= Breadcrumb Lite - year ======= -->
-      <div class="breadcrums-lite1">
-      <div class="container">
-        <h3>
-         ******************************** 2025 ********************************
-        </h3>
-        <!-- <p>Meet the Team!</p> -->
-      </div>
-    </div><!-- End Breadcrumb Lite -->
-    <div class="pub-container container">
+
+  <div class="tabs">
+    <div class="tab-buttons">
+      <button class="tab-btn active" onclick="switchTab('conf')">2025 Conferences</button>
+      <button class="tab-btn" onclick="switchTab('journal')">2025 Journals</button>
+    </div>
+
+    <div id="conf" class="tab-content active">
       <ul>
-        <li><b>Amritesh Kumar</b>, Koustav Kumar  Mondal, Lokendra Vishwakarma, Debasis Das, "RBCET: A Reputation-based Blockchain Consensus Mechanism 
-          for Fast and Secured Energy Trading in Internet of Electric Vehicles (IoEV)" <strong class="highText">IEEE Transactions on Consumer Electronics
-            (Impact Factor: 4.3)</strong>
-        </li>
-        <li><b>Jayant Vyas</b>, J Budhwani, Debasis Das, "PRO-MTL: Parameterized Route Optimization using Multi-Task Learning" 
-          <strong class="highText">IEEE Transactions on Services Computing (Impact Factor: 7.2)</strong>
-        </li>
-        <li> <b>Ankur Nahar</b>, N Bhardwaj, SK Das, Debasis Das, "A Hypergraph Approach to Deep Learning Based Routing in Software-Defined Vehicular Networks"
-          <strong class="highText">IEEE Transactions on Mobile Computing (Impact Factor: 7.7)</strong>
-        </li>
+        <li><a href="#conf1">Conference on Secure VANETs 2025</a></li>
+        <li><a href="#conf2">International Conference on Blockchain Research 2025</a></li>
+        <li><a href="#conf3">IEEE Symposium on Networked Systems 2025</a></li>
       </ul>
     </div>
 
-    <!-- ======= Breadcrumb Lite - year ======= -->
-      <div class="breadcrums-lite1">
-      <div class="container">
-        <h3>
-         ******************************** 2024 ********************************
-        </h3>
-        <!-- <p>Meet the Team!</p> -->
-      </div>
-    </div><!-- End Breadcrumb Lite -->
-
-    <div class="pub-container container">
+    <div id="journal" class="tab-content">
       <ul>
-         <li><b>Jayant Vyas</b>, SK Burnwal, P Sinha, Debasis Das,
-           "Co-Move: COVID-19 and Inter-Region Human Mobility Analysis and Prediction.
-          " <strong class="highText">IEEE Transactions on Computational Social Systems (Impact Factor: 4.5)</strong>
-        </li>
-        <li><b>Himani Sikarwar</b>, H Vasudev, Debasis Das, M Conti, KK Mondal, "SECURE: Secure and Efficient ProtoCol Using Randomness and Edge-Computing for Drone-Assisted Internet of Vehicles.
-          " <strong class="highText">IEEE Transactions on Mobile Computing (Impact Factor: 7.7)</strong>
-        </li>
-        <li><b>Ankur Nahar</b>, Koustav Kumar Mondal, Debasis Das, and Rajkumar Buyya, "Clouds on the Road: A Software-Defined Fog Computing Framework for Intelligent
-Resource Management in Vehicular Ad-hoc Networks." <strong class="highText">IEEE Transactions on Mobile Computing (Impact Factor: 7.7)</strong>
-        </li>
-        <li>Himanshu Singh, Ajay Pratap, Ram Narayan Yadav, <b>Debasis Das</b>, "Loss Aware Federated Learning for Service Migration in Multimodal E-Health Services" 
-          <strong class="highText">IEEE Transactions on Services Computing (Impact Factor: 5.5)</strong>
-        </li>
-        <li>Shristy Gupta, <b>Amritesh Kumar</b>, Lokendra Vishwakarma, and Debasis Das, "Enhancing Blockchain Scalability and Security: 
-          The Early Fraud Detection (EFD) Framework for Optimistic Rollups" <strong class="highText">Cluster Computing (Impact Factor: 4.4)</strong>
-          </li>
-        <li> <b>Amritesh Kumar</b>, Lokendra Vishwakarma, and Debasis Das, "LandChain: A MultiChain Based Novel Secure Land Record Transfer System" 
-          <strong class="highText">IEEE Transactions on Reliability (Impact Factor: 5.9)</strong>
-          </li>
-        <li> <b>Ankur Nahar</b>, Koustav Kumar Mondal, Debasis Das, and Rajkumar Buyya, "qIoV: A Quantum-Driven Internet-of-Vehicles-Based Approach for 
-          Environmental Monitoring and Rapid Response Systems" <strong class="highText">arXiv preprint arXiv:2403.18622</strong>
-          </li>
-        <li> <b>Lokendra Vishwakarma</b>, Debasis Das, "BLISS: blockchain-based integrated security system for internet of things (IoT) applications" 
-          <strong class="highText">International Journal of Information Security (Impact factor: 3.2) </strong>
-          </li>
+        <li><a href="#journal1">IEEE Transactions on Vehicular Technology - March 2025</a></li>
+        <li><a href="#journal2">ACM Transactions on Cybersecurity - June 2025</a></li>
+        <li><a href="#journal3">Elsevier Journal of Computer Networks - April 2025</a></li>
       </ul>
     </div>
+  </div>
 
-    <div class="breadcrums-lite1">
-      <div class="container">
-        <h3>
-         ******************************** 2023 ********************************
-        </h3>
-        <!-- <p>Meet the Team!</p> -->
-      </div>
-    </div><!-- End Breadcrumb Lite -->
+  <script>
+    function switchTab(tabId) {
+      const tabs = document.querySelectorAll(".tab-content");
+      const buttons = document.querySelectorAll(".tab-btn");
 
-    <div class="pub-container container">
-      <ul>
-        <li><b>Jayant Vyas</b>, Debasis Das, and Santanu Chaudhury, "Federated learning based driver recommendation for next generation transportation system," 
-          <strong class="highText">Expert Systems with Applications (Impact Factor: 8.5)</strong>
-          </li>
-        <li>
-          <b>Himani Sikarwar</b>, Debasis Das, "A Novel MAC-Based Authentication Scheme (NoMAS) for Internet of Vehicles (IoV)," <strong class="highText">IEEE Transactions on Intelligent Transportation Systems (Impact factor: 8.5)</strong>
-        </li>
-        <li>
-          N Bhardwaj, A Pal, <b> Debasis Das </b>, "Adaptive Context based Road Accident Risk Prediction using Spatio-temporal Deep Learning," <strong class="highText">IEEE Transactions on Artificial Intelligence (Impact factor: TBD)</strong>
-        </li>
-        <li>
-          <b>Ankur Nahar</b>, Debasis Das, "MetaLearn: Optimizing routing heuristics with a hybrid meta-learning approach in vehicular ad-hoc networks," <strong class="highText">Ad-Hoc Networks (Impact factor: 4.8)</strong>
-        </li>
-        <li>
-          <b>Amritesh Kumar</b>, Lokendra Vishwakarma, Debasis Das, "R-PBFT: A secure and intelligent consensus algorithm for Internet of vehicles,"
-          <strong class="highText">Vehicular Communications (Elsevier) (Impact factor: 8.373)</strong>
-        </li>
-        <li>
-          <b>Nandini Saini</b>, Chiranjoy Chattopadhyay, Debasis Das, "E2AlertNet: An explainable, efficient, and lightweight model for emergency alert from aerial imagery," 
-          <strong class="highText">Remote Sensing Applications: Society and Environment (Impact factor: 4.7)</strong>
-        </li>
-        <li>
-          <b>Jayant Vyas</b>, Debasis Das, and Santanu Chaudhury. "Federated learning based driver recommendation for next-generation transportation system,"
-          <strong class="highText">Expert Systems with Applications 225 (2023), 119951 (Impact Factor: 8.665)</strong>
-        </li>
-        <li>
-          <b>Nandini Saini</b>, C Chattopadhyay, and Debasis Das, "SOLARNet: A Single Stage Regression based Framework for Efficient and Robust Object Recognition in Aerial Images,"
-          <strong class="highText">Pattern Recognition Letters (Impact Factor: 5.1)</strong>
-        </li>
-        <li>
-          <b>Himani Sikarwar</b>, Debasis Das, "SecEdge: Secure Edge-Computing Based Hybrid Approach for Data Collection and Searching in IoV,"
-          <strong class="highText">IEEE Transactions on Network and Service Management (Impact Factor: 5.3)</strong>
-        </li>
-        <li>
-          <b>Ankur Nahar</b>, Debasis Das, "SDCast: A Software-Defined Networking Based Clustered Routing Protocol for Vehicular Ad-Hoc Networks," 
-          <strong class="highText">Wireless Personal Communications (Impact Factor: 2.2)</strong>
-        </li>
-        <li>
-          <b>Umang Barbhaya</b>, Lokendra Vishwakarma, Debasis Das, "ETradeChain: Blockchain-Based Energy Trading in Local Energy Market (LEM) Using Modified Double Auction Protocol," 
-          <strong class="highText">IEEE Transactions on Green Communications and Networking (Impact Factor: 4.8)</strong>
-        </li>
-        <li>
-          <b>Trupil Lambasiya</b>, Debasis Das, "QueryCom: Secure Message Communication and Data Searching Protocols for Smart Transportation," 
-          <strong class="highText">IEEE Transactions on Intelligent Transportation Systems (Impact factor: 8.5)</strong>
-        </li>
-        
-      </ul>
-    </div>
+      tabs.forEach(tab => tab.classList.remove("active"));
+      buttons.forEach(btn => btn.classList.remove("active"));
 
-  <!-- ======= Breadcrumb Lite - year ======= -->
-
-   
-   <!-- ======= Breadcrumb Lite - year ======= -->
-   <div class="breadcrums-lite1">
-    <div class="container">
-      <h3>
-       ******************************** 2022 ********************************
-      </h3>
-      <!-- <p>Meet the Team!</p> -->
-    </div>
-  </div><!-- End Breadcrumb Lite -->
-
-
-
-
-    <div class="pub-container container">
-      <ul>
-        <li>
-        N Manna, S Das, SKS Rahaman, <b> Debasis Das </b>, Economic burden, knowledge, and practice related to prevention of rabies: A cross-sectional study among animal bite victims attending Rabies Immunization Clinic, Medical College an...," 
-          <strong class="highText">National Journal of Physiology, Pharmacy and Pharmacology 12 (10)</strong>
-        </li>
-        <li>
-         N Manna, S Das, SR SK, <b> Debasis Das </b>, Prevalence and factors affecting developmental delay among 0–6-year-old children attending immunization clinic,"
-          <strong class="highText">National Journal of Physiology, Pharmacy and Pharmacology 12 (6), 834-834</strong>
-        </li>
-        <li>
-         <b> Lokendra Vishwakarma</b>, Ankur Nahar and Debasis Das, LBSV: Lightweight Blockchain Security Protocol for Secure Storage and Communication in SDN-enabled IoV, 
-          <strong class="highText">IEEE Transactions on Vehicular Technology, April 2022, (Impact Factor = 5.978)</strong>
-        </li>
-        <li>
-          <b>Lokendra Vishwakarma</b> and Debasis Das, SmartCoin: A novel incentive mechanism for vehicles in intelligent transportation system based on consortium blockchain [Poster Presentation], 
-          <strong class="highText">Vehicular Communications, January 2022, (SCI, Impact factor=6.91) (impact factor 6.91)</strong>
-        </li>
-        <li><b>Trupil Limbasiya</b>, Debasis Das and Sanjay K. Sahay, SPARK: Secure and Lightweight Communication Protocols for Smart Parking Management , <strong class="highText"> Journal of Information Security and Applications, 2022, (Impact factor = 4.96)</strong>
-        </li>
-         <li>
-         T Limbasiya, SK Sahay, <b>Debasis Das </b>, SAMPARK: Secure and lightweight communication protocols for smart parking management, 
-          <strong class="highText">Journal of Information Security and Applications 71, 103381  (Impact factor: 5.6)</strong>
-        </li>
-
-   <!-- ======= Breadcrumb Lite - year ======= -->
-   <div class="breadcrums-lite1">
-    <div class="container">
-      <h3>
-       ******************************** 2021 ********************************
-      </h3>
-      <!-- <p>Meet the Team!</p> -->
-    </div>
-  </div><!-- End Breadcrumb Lite -->
-
-        <li>
-          <b>Jayant Vyas</b>, Debasis Das and Santanu Chaudhury, DriveBFR: Driver Behavior and Fuel Efficiency-Based Recommendation System, 
-          <strong class="highText">IEEE Transactions on Computational Social Systems, Sep 2021, (Impact factor=4.747)</strong>
-        </li>
-        <li>
-         <b> Lokendra Vishwakarma </b> and Debasis Das, BlockTree: a nonlinear structured, scalable and distributed ledger scheme 
-          for processing digital transactions, <strong class="highText">Cluster Computing, 31 July 2021, (SCI, Impact factor=1.809)</strong>
-        </li>
-        <li>
-         <b> Himani Sikarwar</b> and Debasis Das, Towards Lightweight Authentication and Batch Verification Scheme in IoV, <strong class="highText">IEEE Transactions on 
-          Dependable and Secure Computing(TDSC)-2021(Accepted) [Impact Factor=6.8, Core Ranking: A]</strong>.
-        </li>
-        <li>
-         <b> Lokendra Vishwakarma </b> and  Debasis Das, SCAB-IoTA: Secure communication and authentication for IoT applications using 
-          blockchain, <strong class="highText">Journal of Parallel and Distributed Computing (JPDC), 22 April 2021, (SCI, Impact Factor=2.296)</strong>
-        </li>
-        <li>
-         <b> Debasis Das </b>; "Toward Next Generation of Blockchain Using Improvized Bitcoin-NG", <strong class="highText">IEEE Transactions on Computational 
-          Social Systems. [SCI, CiteScore=3.9]</strong>.
-        </li>
-        
-   <!-- ======= Breadcrumb Lite - year ======= -->
-   <div class="breadcrums-lite1">
-    <div class="container">
-      <h3>
-       ******************************** 2020 and < 2020 ********************************
-      </h3>
-      <!-- <p>Meet the Team!</p> -->
-    </div>
-  </div><!-- End Breadcrumb Lite -->
-        <li>
-          <b>Trupil Limbasiya</b> and  Debasis Das, VCom: Secure and Efficient Vehicle-to-Vehicle Message Communication Protocol, 
-        <strong class="highText">IEEE Transactions on Network and Service Management(TNSM), 1-12, Nov-2020 (SCI, Impact Factor=3.88)</strong>
-        </li>
-        <li>
-          <b>Trupil Limbasiya</b>, Debasis Das, and S.K.Das. "MComIoV: Secure and Energy-Efficient Message Communication Protocols 
-          for Internet of Vehicles." <strong class="highText">IEEE/ACM Transactions on Networking (2021) (Impact Factor=3.315) [Accepted]</strong>.
-        </li>
-        <li>
-          <b>Harsha V</b> and Debasis Das "P2-SHARP: Privacy-Preserving Secure Hash-based Authentication and Revelation Protocol in 
-          IoV's, <strong class="highText">Computer Networks, Volume 191, 2021. [Impact Factor: 3.111]</strong> 
-        </li>
-        <li>
-          <b>Trupil Limbasiya</b>, and Debasis Das. "IoVCom: Reliable Comprehensive Communication System for the Internet of Vehicles." 
-        <strong class="highText">IEEE Transactions on Dependable and Secure Computing (2020) (SCI, Impact Factor=6.40) [Accepted]</strong>.
-        </li>
-        <li>
-          <b>Harsha V</b>, Varad Deshpande, Debasis Das, and Sajal K. Das A Lightweight Mutual Authentication Protocol for V2V 
-          Communication on the Internet of Vehicles, <strong class="highText">IEEE Transactions on Vehicular Technology, 2020 (SCI, Impact Factor=5.33) 
-          [Accepted]</strong>.
-        </li>
-        <li>
-          <b>Trupil Limbasiya</b>, and Debasis Das, "Lightweight Secure Message Broadcasting System for Vehicle-to-Vehicle Communication", 
-        <strong class="highText">IEEE Systems Journal, 2020: 1-10 (SCI, Impact Factor: 4.46)</strong>.
-        </li>
-        <li>
-          <b>Debasis Das</b> and  Rajiv Misra, ‘EASBVN: Efficient Approximation Scheme for Broadcasting in Vehicular Networks, <strong class="highText">Wireless 
-          Networks-2020, Vol. x, No. x,  Springer[SCI, IF=2.69][ Accepted]</strong>
-        </li>
-        <li>
-         <b> Trupil Limbasiya </b> and Debasis Das, “Identity-Based Proficient Message Verification Scheme for Vehicle Users”, Pervasive 
-          and Mobile Computing, <strong class="highText">Elsevier, 2019, 60, pp. 1-15 ( SCI, Impact Factor: 2.76)</strong> 
-        </li>
-      </ul>
-    </div>
-
-    <!-- ======= Breadcrumb Lite - Selected Transactions / Journals Publications ======= -->
-    <div class="breadcrumbs-lite">
-      <div class="container">
-        <h2>
-          <u>Selected Conference Publications</u>
-        </h2>
-      </div>
-    </div><!-- End Breadcrumb Lite -->
-        <div class="pub-container container">
-      <ul>
-        <div class="breadcrums-lite1">
-          <div class="container">
-            <h3>
-             ******************************** 2025 ********************************
-            </h3>
-            <!-- <p>Meet the Team!</p> -->
-          </div>
-        </div><!-- End Breadcrumb Lite -->
-        <li><b>Amritesh Kumar</b>, Nitin bhatia and Debasis Das, "Grouping nodes based PBFT for Preventing Fake Educational Certificates Verification"
-          <strong class="highText">26th International Conference on Distributed Computing and Networking (Core Ranking: None)</strong>
-          </li>
-        <div class="pub-container container">
-      <ul>
-        
-        <div class="breadcrums-lite1">
-          <div class="container">
-            <h3>
-             ******************************** 2024 ********************************
-            </h3>
-            <!-- <p>Meet the Team!</p> -->
-          </div>
-        </div><!-- End Breadcrumb Lite -->
-        <li><b>Koustav Kumar Mondal </b>, Debasis Das, "GUARDEV: Guided Unified Adaptive Response for Defending Electric Vehicles," 
-          <strong class="highText">27th International Conference on Pattern Recognition (Core Ranking: B)</strong>
-          </li>
-        <li><b>Aarju Dixit </b>, Debasis Das, "NeuroSense: Smartwatch-based Early Detection Framework for Alzheimer's Disease," 
-          <strong class="highText">22nd International Symposium on Network Computing and Applications (NCA) 2024(Core Ranking: B)</strong>
-          </li>
-        <li><b>Nandini Saini </b>, Shubham Gupta, C Chattopadhyay, Debasis Das, S Kundu, "EVDNET: Towards Explainable Multi Scale, Anchor Free Vehicle Detection Network in High Resolution Aerial Imagery," 
-          <strong class="highText">IGARSS 2024-2024 IEEE International Geoscience and Remote Sensing Symposium(Core Ranking: C)</strong>
-          </li>
-        <li><b>Nandini Saini </b>, Shubham Gupta, C Chattopadhyay, Debasis Das, S Kundu, "Synergizing Vision and Language in Remote Sensing: A Multimodal Approach for Enhanced Disaster Classification in Emergency Response Systems," 
-          <strong class="highText">IGARSS 2024-2024 IEEE International Geoscience and Remote Sensing Symposium(Core Ranking: C)</strong>
-          </li>
-        <li><b>Ayanabha Ghosh </b>, Rishi Jain, Shubham Parida, Debasis Das, "TS-NUC : Nearest Unlike Cluster guided Generative Counterfactual Estimation for Time Series Classification," 
-          <strong class="highText">27th International Conference on Pattern Recognition (Core Ranking: B)</strong>
-          </li>
-        <li><b>Koustav Kumar Mondal </b>, Ashi Gupta, Debasis Das, Chun-I Fan , "PISTON: PUF-Integrated Secure, Throughput-Optimized Network Protocol for IoV," 
-          <strong class="highText">29th Asia-Pacific Conference on Communications (Core Ranking: C)</strong>
-          </li>
-        <li><b>Koustav Kumar Mondal </b>, Debasis Das, "PISTON: PUF-Integrated Secure, Throughput-Optimized Network Protocol for IoV," 
-          <strong class="highText">27th International Conference on Pattern Recognition (Core Ranking: B)</strong>
-          </li>
-        <li><b>Nandini Saini</b>, Shubham Gupta, Suman Kundu, Debasis Das "CrisisKAN: Knowledge-infused and Explainable Multimodal Attention Network for Crisis Event Classification," 
-          <strong class="highText">46th European Conference on Information Retrieval (ECIR), Glasgow, Scotland (Core Ranking: A)</strong>
-          </li>
-         <li><b>Nandini Saini</b>, Shubham Gupta, Chiranjoy Chattopadhyay, Suman Kundu, Debasis Das, "Synergizing Vision and Language in Remote Sensing: A Multimodal Approach for Enhanced Disaster Classification in Emergency Response Systems,"
-           <strong class="highText">International Geoscience and Remote Sensing Symposium (IGARSS), Athens, Greece (Core Ranking: C)</strong>
-          </li>
-         <li><b>Nandini Saini</b>, Shubham Gupta, Chiranjoy Chattopadhyay, Suman Kundu, Debasis Das, "EVDnet: Towards explainable multi-scale, anchor free vehicle detection Network in high-resolution aerial imagery," 
-           <strong class="highText">International Geoscience and Remote Sensing Symposium (IGARSS), Athens, Greece (Core Ranking: C)</strong>
-        </li>
-        <li>
-          <b>Ankur Nahar</b>, Debasis Das, Ramnarayan Yadav, Khalim Khujamatov, Ernazar Reypnazarov, "RF-CVN: Recurrent Reinforcement Learning Framework for Cognitive Vehicular Ad-Hoc Networks Routing," 
-          <strong class="highText">25th IEEE Wireless Communications and Networking Conference (WCNC), Dubai, 2024.</strong> 
-        </li>
-        <li>
-          <b>Lokendra Vishwakarma</b>, Amritesh Kumar, Jeevan Kumar Madugunda, Debasis Das, "FinBlock: Secure and Fast Transaction Confirmation with High Throughput for FinTech Application," 
-          <strong class="highText">25th IEEE Wireless Communications and Networking Conference (WCNC), Dubai, 2024.</strong> 
-        </li>
-        <li>
-          <b>Lokendra Vishwakarma </b>, Debasis Das, Sajal K Das, Christian Becker "SmartGrid-NG: Blockchain Protocol for Secure Transaction Processing in Next Generation Smart Grid," 
-          <strong class="highText">Proceedings of the 25th International Conference on Distributed Computing and Networking</strong> 
-        </li>
-        <li>
-          Khalim Khujamatov, Debasis Das, Amir Lazarev, Ernazar Reypnazarov, Doston Khasanov, <b>Ankur Nahar</b>, "Design and Implementation of an Active Safety System for Vehicular Ad-Hoc Networks(VANETs)," 
-          <strong class="highText">38th International Conference on Information Networking (ICOIN), Vietnam, 2024.</strong> 
-        </li>
-
-     <div class="pub-container container">
-      <ul>
-        <div class="breadcrums-lite1">
-          <div class="container">
-            <h3>
-             ******************************** 2023 ********************************
-            </h3>
-            <!-- <p>Meet the Team!</p> -->
-          </div>
-        </div><!-- End Breadcrumb Lite -->
-        <li> 
-          <b>Priyanshi Jain</b>, Yashvi Ramanuj, and Debasis Das, "Predicting Traffic Accidents Severity using Collaborative ML on Blockchain," 
-          <strong class="highText">2023 28th Asia Pacific Conference on Communications (APCC), (Core ranking: C)</strong> 
-        </li>
-        <li> 
-          <b>S Sureshan</b>, Debasis Das, "Few-Shot Learning-based Anomaly Detection in Security Applications," 
-          <strong class="highText">Proceedings of the 6th Joint International Conference on Data Science</strong> 
-        </li>
-         <li> 
-          <b>Koustav Kumar Mondal </b>, Divya Mahendia, Debasis Das, and Sumit Kalra, "Edge-Centric Security Framework for Electric Vehicle Connectivity: A Deep Learning Approach," 
-           <strong class="highText">28th Asia Pacific Conference on Communications (APCC), pp. 448-453. IEEE, 2023, (Core Ranking: C)</strong> 
-        </li>
-        <li> 
-          <b>Amritesh Kumar </b>, Debasis Das, "TreeChain: A High Throughput and Efficient Search based Secure Application for Internet of Vehicles," 
-          <strong class="highText">24th International Conference on Distributed Computing and Networking</strong> 
-        </li>
-        <li>
-          Arijit Karati, LC Chang, CI Fan, <b>Debasis Das</b>, "On the Security of Lightweight Authentication and Batch Verification in VANETs," 
-          <strong class="highText">2023 World Conference on Communication & Computing (WCONF) </strong> 
-        </li>
-        <li>
-          <b>Jayant Vyas </b>, Bhumika, Debasis Das, Santanu Chaudhury. "Dr. MTL: Driver Recommendation using Federated Multi-Task Learning." 
-          <strong class="highText"> IEEE 98th Vehicular Technology Conference: VTC2023-Fall, 10-13 October 2023, Hong Kong. (Core Ranking: B) </strong> 
-        </li>
-        <li>
-          <b>Ankur Nahar</b>, Himani Sikarwar, Sanyam Jain and Debasis Das. "CacheIn: A Secure Distributed Multi-layer Mobility-Assisted Edge Intelligence based Caching for Internet of Vehicles" 
-          <strong class="highText">THE 23RD  IEEE/ACM International Symposium OnCluster, Cloud and Internet Computing (CCGRID-23). (Core Ranking: A) </strong>
-        <li>
-          <b>Nandini Saini</b>, C Chattopadhyay, Debasis Das, "Revealing the Unseen: A Single-Stage Attention Based Occluded Object Detection Model in Remote Sensing Imagery" 
-          <strong class="highText">International Conference on Pattern Recognition and Machine Intelligence</strong>
-        </li>
-        <li>
-          <b>Koustav Kumar Mondal</b>, Debasis Das."FlameNet: A Real-Time, Lightweight Fire & Smoke Detection Solution for Internet of Vehicles" in 
-          <strong class="highText">International Wireless Communications and Mobile Computing (IWCMC) 2023. (Core Ranking: B)</strong>
-        </li>
-        <li>
-        <b>Ankur Nahar</b>, Debasis Das, SK Das, "Optimizing Stochastic Task Migration in Vehicular Edge Computing," 
-          <strong class="highText">2023 21st International Symposium on Modeling and Optimization in Mobile, Ad Hoc, and Wireless Networks (WiOpt), (Core Ranking: B)</strong>
-        </li>
-          <b>Amritesh Kumar</b>, Monu Nagar, Lokendra Vishwakarma, Debasis Das, "HN-mPBFT: A Healthy Node based Modified Secure and Fast Consensus Mechanisms for Internet of Vehicles" 
-          <strong class="highText"> International Wireless Communications and Mobile Computing (IWCMC). (Core Ranking: B) </strong>
-        </li>
-        <li>
-          <b>Ankur Nahar</b>, Debasis Das, Ramnarayan Yadav (IIITRAM, Ahmedabad), Khalim Khujamatov (TUIT, Tashkent), and Ernazar Reypnazarov (TUIT, Tashkent), "RF-CVN: Recurrent Reinforcement Learning Framework for Cognitive Vehicular Ad-Hoc Networks Routing" in
-          <strong class="highText"> International Wireless Communications & Mobile Computing Conference (IWCMC 2023) (Core Ranking: B) </strong>
-        </li>
-        <li>
-          <b>Ankur Nahar</b>, Debasis Das and Sajal K. Das, "SpTFrame: A Framework for Spatio-Temporal Information Aware Message Dissemination in Software Defined Vehicular Networks," in 
-          <strong class="highText">ICDCN Conference, 2023.</strong>        
-        </li>
-        <li>
-          <b>Himani Sikarwar</b>, and Debasis Das, "SMMAP: Secure MAC-based Mutual Authentication Protocol for IoV," 
-          <strong class="highText">24th International Conference on Distributed Computing and Networking in (ICDCN 2023)</strong>
-        </li>
-        <li>
-          <b>Nandini Saini</b>, C Chattopadhyay, Debasis Das, "DG-YOLOT: A Lightweight Density Guided YOLO-Transformer for Remote Sensing Object Detection," 
-          <strng class="highText">IGARSS 2023-2023 IEEE International Geoscience and Remote Sensing Symposium (IGARSS), (Core Ranking: C) </strng>
-        </li>
-        <li>
-          <b>Bhumika</b>, Debasis Das, "Deep Learning Based Urban Anomaly Prediction from Spatiotemporal Data," 
-          <strong class="highText">Machine Learning and Knowledge Discovery in Databases: European Conference (ECML-PKDD) </strong> 
-        </li>
-        <li>
-          <b>Lokendra Vishwakarma</b>, Amritesh Kumar, Debasis Das, "CrossLedger: A Pioneer Cross-chain Asset Transfer Protocol," 
-          <strong class="highText">2023 IEEE/ACM 23rd International Symposium on Cluster, Cloud and Internet Computing (CCGrid), (Core Ranking: A) 
-            </strong>
-        </li>
-
-              <div class="breadcrums-lite1">
-                <div class="container">
-                  <h3>
-                   ******************************** 2022 ********************************
-                  </h3>
-                  <!-- <p>Meet the Team!</p> -->
-                </div>
-              </div><!-- End Breadcrumb Lite -->
-
-
-        
-        <li>
-         <b> Ankur Nahar </b>, Lokendra Vishwakarma, Bhumika and Debasis Das, "MetoidS: Hybrid K-Medoids-Meta Heuristic Clustering-Based Routing Optimization in Vehicular Ad-Hoc Networks", 
-          <strong class="highText">2022 IEEE 95th Vehicular Technology Conference (VTC2022-Spring) (Helsinki, Finland, 2022), (Accepted) 
-          (Core Ranking=Core B</strong>).
-        </li>
-        <li>
-         <b> Debasis Das </b>, "A Novel Negative Link Prediction Algorithm for Social Networks," 
-          <strong class="highText">2022 IEEE 95th Vehicular Technology Conference:(VTC2022-Spring), 1-5 (Accepted) 
-          (Core Ranking=Core B</strong>).
-        </li>
-        <li>
-          T Limbasiya, A Karati, <b> Debasis Das </b>, "SELECT: Secure and Lightweight Context-Aware Mechanism for Smart Vehicular Networks," 
-          <strong class="highText">IEEE International Symposium on Dependable, Autonomic and Secure Computing (DASC) </strong>
-        </li>
-        <li>
-         <b> Bhumika </b>, Debasis Das, "MARRS: A Framework for multi-objective risk-aware route recommendation using Multitask-Transformer," 
-          <strong class="highText">Proceedings of the 16th ACM Conference on Recommender Systems, 360-368 (Accepted) (Core Ranking=Core A)</strong>
-        </li>
-        <li>
-          <b>Jayant Vyas </b>, Nishit Bhardwaj, Bhumika, and Debasis Das, "TransDBC: Transformer for Multivariate Time Series based Driver Behavior Classification," 
-          <strong class="highText">The 2022 International Joint Conference on Neural Networks (IJCNN 2022) (Accepted) (Core Ranking=Core B)</strong>
-        </li>
-        <li>
-          <b>Ankur Nahar</b>, Himani Sikarwar and Debasis Das, "AlcFier: Adaptive Self-Learning Classifier for Routing in Vehicular Ad-Hoc Network," 
-          <strong class="highText">2022 IEEE 47th Local Computer Networks Conference (LCN-2022) (Edmonton, Canada, 2022). (Accepted) (Core Ranking=Core B </strong>)
-        </li>
-        <li>
-         <b> Bhumika </b> Debasis Das, "A Deep Learning-based Framework to Predict Urban Anomaly from Multi-Stream Data," 
-          <strong class="highText">European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD 2022) (Core Ranking=Core A </strong>).
-        </li>
-        <li>
-          <b> Bhumika </b>, Jayant Vyas and Debasis Das, "Stress-Aware Recommendation for Safe Driving using MTL-ConvLSTM," 
-          <strong class="highText">The 25th IEEE International Conference on Intelligent Transportation Systems (IEEE ITSC 2022) (Accepted)
-          </strong>)
-        </li>
-        <li>
-         <b> Bhumika </b> and Debasis Das, "ANOM-DGCN: Detection of Anomalies in Dynamic Networks using Deviated Graph Convolution Network," 
-          <strong class="highText">2022 International Wireless Communications and Mobile Computing (IWCMC) (Dubrovnik, Croatia, 2022) (Core Ranking=Core B</strong>)
-        </li>
-        <li>
-         <b> Himani Sikarwar </b>, Ankur Nahar and Debasis Das, "LAAS: Lightweight Anonymous Authentication Scheme for Universal Internet of Vehicles (UIoV))," 
-          <strong class="highText">2022 International Wireless Communications and Mobile Computing (IWCMC) (Dubrovnik, Croatia, 2022) (Core Ranking=Core B</strong>)
-        </li>
-        <li>
-         <b> Debasis Das </b>, "UApredictor: Urban Anomaly Prediction from Spatial-Temporal Data using Graph Transformer Neural Network," 
-          <strong class="highText">IEEE World Congress on Computational Intelligence (IEEE WCCI) International Joint Conference on Neural Networks (IJCNN 2022) 
-            (Core Ranking=Core B) </strong>
-        </li>
-        <li>
-          Rigoni Giulio, Cristina M. Pinotti, <b>Bhumika</b>, Debasis Das, and Sajal K. Das, "Delivery with UAVs: a simulated dataset via ATS", 
-          <strong class="highText">2022 IEEE 95th Vehicular Technology Conference (VTC2022-Spring) (Core Ranking=Core B) </strong>
-        </li>
-        <li>
-         <b>  Debasis Das </b>, and Sajal K. Das, "RsSafe: Personalized Driver Behavior Prediction for Safe Driving,"
-          <strong class="highText">IEEE World Congress on Computational Intelligence (IEEE WCCI) International Joint Conference on Neural Networks (IJCNN 2022)
-            (Core Ranking=Core B) </strong>
-        </li>
-        <li>
-         <b> Bhumika </b>and Debasis Das, "A Deep learning based Framework for Multi-Objective Risk-Aware Route Recommendation using Multitask-Transformer," 
-          <strong class="highText">16th ACM Conference on Recommender Systems (RecSys 2022) (Core Ranking=Core A) </strong>
-        </li>
-        <li>
-         <b> Amritesh Kumar </b>, and Debasis Das, "IntelligentChain: Blockchain and Machine Learning based Intelligent Security Application for Internet of Vehicles (IoV)," 
-          <strong class="highText">2022 IEEE 95th Vehicular Technology Conference (VTC2022-Spring) (Helsinki, Finland, 2022) (Core Ranking=Core B) </strong>
-        </li>   
-        <li>
-         <b> Himani Sikarwar </b>, Debasis Das, "EECAAP: Efficient Edge-Computing based Anonymous Authentication Protocol for IoV", 
-          <strong class="highText">IEEE International Conference on High-Performance Computing Workshops (HiPCW) </strong>
-        </li>
-        <li>
-         <b> Jayant Vyas</b>, N Bhardwaj, Debasis Das, "TransDBC: Transformer for Multivariate Time-Series based Driver Behavior Classification," 
-          <strong class="highText">2022 International Joint Conference on Neural Networks (IJCNN), 1-8 (Core Ranking=Core B) </strong>
-        </li>
-        
-        <div class="breadcrums-lite1">
-          <div class="container">
-            <h3>
-             ******************************** 2021 and < 2021 ********************************
-            </h3>
-            <!-- <p>Meet the Team!</p> -->
-          </div>
-        </div><!-- End Breadcrumb Lite -->
-
-     
-        <li>
-          <b>Amritesh Kumar</b> and Debasis Das, "EIoVChain: Towards Authentication and Secure Communication Based Blockchain for Internet of Vehicles (IoV)", 
-          <strong class="highText">2021 IEEE International Conference on Blockchain (Blockchain), held on  
-          December 2021 (Core Ranking= - </strong>).
-        </li>
-        <li>
-         <b> Amritesh Kumar </b> and Debasis Das, "SIoVChain: Efficient and Secure Blockchain-Based Internet of Vehicles (IoV)," 
-          <strong class="highText">23rd International Conference on Distributed Computing and Networking, held on  
-          1-4 January 2020 (Core Ranking=Core B</strong>).
-        </li>
-        <li>
-         <b> Ankur Nahar </b> and Debasis Das, "SeScR: SDN-Enabled Spectral Clustering-Based Optimized Routing Using Deep Learning in VANET 
-          Environment", <strong class="highText">19th IEEE International Symposium on Network Computing and Applications (NCA 2020), held on  
-          24-27 November 2020 (Core Ranking=Core A</strong>).
-        </li>
-        <li>
-         <b> Lokendra Vishwakarma </b> and Debasis Das,  " BSS: Blockchain-Enabled Security System for the Internet of Things 
-          Applications", <strong class="highText">19th IEEE International Symposium on Network Computing and Applications (NCA 2020), held on  24-27 
-          November 2020 (Core Ranking=Core A)</strong>.
-        </li>
-        <li>
-         <b> Jayant Vyas </b>, Debasis Das, and Sajal K. Das, "Vehicular Edge Computing Based Driver Recommendation System Using 
-          Federated Learning", <strong class="highText">The 17th IEEE International Conference on Mobile Ad-Hoc and Smart Systems (IEEE MASS - 2020) 
-          Delhi NCR, India, December 10-13, 2020. (Core Ranking: Core B)[ Accepted]</strong>.
-        </li>
-        <li>
-         <b> Ankur Nahar </b>, Debasis Das, and Sajal K. Das, " OBQR: orientation-based Source QoS Routing in VANETs ", 
-          <strong class="highText">The ACM 23rd International Conference on Modeling, Analysis and Simulation of Wireless and 
-            Mobile Systems(MSWiM) November 16th - 20th, 2020, Alicante, Spain(Core Ranking: Core A)[ Accepted]</strong>.
-        </li>
-        <li>
-         <b> Ankur Nahar </b>, Himani Sikarwar, Debasis Das, CSBR: A Cosine Similarity-Based Selective Broadcast Routing Protocol for Vehicular Ad-Hoc Networks, 
-         <strong class="highText">IFIP Networking 2020, Paris (Accepted)[ Core Ranking: Core A)</strong>.
-        </li>
-        <li>
-          <b> Ankur Nahar </b> Debasis Das, Adaptive Reinforcement Routing in Software-Defined Vehicular Networks, 
-          <strong class="highText">16th International Conference on Wireless Communications & Mobile Computing (IWCMC 2020), Cyprus, June 2020( Accepted)[ Core 
-          Ranking: Core B)</strong>
-        </li>
-        <li>
-          <b> Himani Sikarwar </b> and Debasis Das, A Lightweight And Secure Authentication Protocol for WSN, 
-          <strong class="highText">16th International Conference on Wireless Communications & Mobile Computing (IWCMC 2020), Cyprus, June 2020( Accepted)[ Core Ranking: Core B)</strong>
-        </li>
-        <li>
-         <b> Himani Sikarwar </b>  Debasis Das, An Efficient Lightweight Authentication and Batch Verification Scheme for Universal Internet of Vehicles (UIoV), 
-          <strong class="highText">16th International Conference on Wireless Communications & Mobile Computing (IWCMC 2020), 
-          Cyprus, June 2020( Accepted)[ Core Ranking: Core B)</strong>
-        </li>
-        <li>
-         <b> Himani Sikarwar </b>, Debasis Das and Sumit Kalra, Efficient Authentication scheme using Blockchain in IoT devices, 
-          <strong class="highText">The 34th International Conference on Advanced Information Networking and Applications (AINA-2020), Caserta Italy, April 
-          15 to April 17, 2020 (Accepted) (Core Ranking: Core B)</strong>.
-        </li>
-        <li>
-         <b> Himani Sikarwar </b>, Ankur Nahar and Debasis Das, Authentication and Batch Verification in Universal Internet of Vehicle (IoV), 
-          <strong class="highText">91st Conference, 25 – 28 May in Antwerp, Belgium, May 2020[ Accepted](Core Ranking: Core B)</strong>.
-        </li>
-      </ul>
-    </div>
-
-  </main>
-  <!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>VANETs Lab</h3>
-            <p>
-              Indian Institute of Technology <br>
-              NH 65, Surpura Bypass Road, Karwar<br>
-              Jodhpur, Rajasthan, 342037<br><br>
-              <strong>Phone:</strong> (+91 291) 280 1261<br>
-              <strong>Email:</strong> debasis@iitj.ac.in<br>
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container d-md-flex py-4">
-
-      <div class="me-md-auto text-center text-md-start">
-        <div class="copyright">
-          &copy; Copyright <strong><span>VANETs Lab</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-        </div>
-      </div>
-      <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
-    </div>
-  </footer>
-  <!-- End Footer -->
-
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="../assets/vendor/aos/aos.js"></script>
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/php-email-form/validate.js"></script>
-  <script src="../assets/vendor/purecounter/purecounter.js"></script>
-  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="../assets/js/main.js"></script>
+      document.getElementById(tabId).classList.add("active");
+      event.target.classList.add("active");
+    }
+  </script>
 
 </body>
-
 </html>
