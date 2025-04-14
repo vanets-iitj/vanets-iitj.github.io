@@ -6,32 +6,22 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Publications</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
   <link href="../assets/img/favicon.png" rel="icon">
-  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="../assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
 
+  <!-- Add basic styling for tabs -->
   <style>
     .tabs-container {
       width: 90%;
       margin: 30px auto;
+    }
+
+    .tab-year {
+      margin-bottom: 30px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 15px;
+      background: #f9f9f9;
     }
 
     .tab-buttons {
@@ -41,27 +31,27 @@
     }
 
     .tab-buttons button {
-      background: #f0f0f0;
+      background: #e0e0e0;
       border: none;
-      padding: 12px 20px;
+      padding: 10px 20px;
       margin: 0 5px;
-      font-size: 16px;
       cursor: pointer;
-      border-radius: 5px;
-      transition: all 0.3s ease;
+      font-weight: 600;
+      border-radius: 4px;
+      transition: 0.3s;
     }
 
     .tab-buttons button.active {
-      background: #0056b3;
-      color: white;
-      font-weight: bold;
+      background: #0066cc;
+      color: #fff;
     }
 
     .tab-content {
       display: none;
-      padding: 20px;
-      border: 1px solid #ddd;
+      padding: 10px 20px;
       background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 4px;
     }
 
     .tab-content.active {
@@ -69,12 +59,11 @@
     }
 
     .tab-content ul {
-      list-style-type: disc;
       padding-left: 20px;
     }
 
     .tab-content li {
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     .highText {
@@ -82,17 +71,17 @@
       font-weight: bold;
     }
 
-    .breadcrums-lite1 h2,
-    .breadcrums-lite1 h3 {
+    .year-heading {
       text-align: center;
+      font-size: 22px;
       font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
     }
   </style>
 </head>
 
 <body>
-
-  <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
       <h1 class="logo me-auto"><a href="index.html">VANETs Lab</a></h1>
@@ -112,51 +101,84 @@
       </nav>
     </div>
   </header>
-  <!-- End Header -->
 
   <main id="main">
-
-    <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs" data-aos="fade-in">
       <div class="container">
         <h2>Publications</h2>
       </div>
     </div>
 
-    <!-- ======= Section: Selected Publications with Tabs ======= -->
-    <div class="breadcrums-lite1">
-      <div class="container">
-        <h2><u>Selected Transactions / Journals Publications / Conferences</u></h2>
-      </div>
-    </div>
-
     <div class="tabs-container">
-      <div class="tab-buttons">
-        <button class="tablink active" onclick="openTab(event, 'journals2025')">2025 Journals</button>
-        <button class="tablink" onclick="openTab(event, 'conferences2025')">2025 Conferences</button>
+      <!-- 2025 Tabs -->
+      <div class="tab-year">
+        <div class="year-heading">********** 2025 **********</div>
+        <div class="tab-buttons">
+          <button class="tablink active" onclick="openTab(event, 'journals2025')">Journals</button>
+          <button class="tablink" onclick="openTab(event, 'conf2025')">Conferences</button>
+        </div>
+        <div id="journals2025" class="tab-content active">
+          <ul>
+            <li><b>Amritesh Kumar</b>, ... <strong class="highText">IEEE Transactions on Consumer Electronics</strong></li>
+            <li><b>Jayant Vyas</b>, ... <strong class="highText">IEEE Transactions on Services Computing</strong></li>
+            <li><b>Ankur Nahar</b>, ... <strong class="highText">IEEE Transactions on Mobile Computing</strong></li>
+          </ul>
+        </div>
+        <div id="conf2025" class="tab-content">
+          <ul>
+            <li><b>Amritesh Kumar</b>, ... <strong class="highText">26th Int. Conf. on Distributed Computing and Networking</strong></li>
+          </ul>
+        </div>
       </div>
 
-      <div id="journals2025" class="tab-content active">
-        <ul>
-          <li><b>Amritesh Kumar</b>, Koustav Kumar Mondal, Lokendra Vishwakarma, Debasis Das, "RBCET: A Reputation-based Blockchain Consensus Mechanism for Fast and Secured Energy Trading in IoEV" <strong class="highText">IEEE Transactions on Consumer Electronics</strong></li>
-          <li><b>Jayant Vyas</b>, J Budhwani, Debasis Das, "PRO-MTL: Parameterized Route Optimization using Multi-Task Learning" <strong class="highText">IEEE Transactions on Services Computing</strong></li>
-          <li><b>Ankur Nahar</b>, N Bhardwaj, SK Das, Debasis Das, "A Hypergraph Approach to Deep Learning Based Routing in SDVNs" <strong class="highText">IEEE Transactions on Mobile Computing</strong></li>
-        </ul>
+      <!-- 2024 Tabs -->
+      <div class="tab-year">
+        <div class="year-heading">********** 2024 **********</div>
+        <div class="tab-buttons">
+          <button class="tablink active" onclick="openTab(event, 'journals2024')">Journals</button>
+          <button class="tablink" onclick="openTab(event, 'conf2024')">Conferences</button>
+        </div>
+        <div id="journals2024" class="tab-content active">
+          <ul>
+            <li><b>Jayant Vyas</b>, ... <strong class="highText">IEEE Transactions on Computational Social Systems</strong></li>
+            <li><b>Himani Sikarwar</b>, ... <strong class="highText">IEEE Transactions on Mobile Computing</strong></li>
+            <li><b>Ankur Nahar</b>, ... <strong class="highText">IEEE Transactions on Mobile Computing</strong></li>
+          </ul>
+        </div>
+        <div id="conf2024" class="tab-content">
+          <ul>
+            <li><b>Koustav Kumar Mondal</b>, ... <strong class="highText">27th Int. Conf. on Pattern Recognition</strong></li>
+            <li><b>Aarju Dixit</b>, ... <strong class="highText">NCA 2024</strong></li>
+            <li><b>Ankur Nahar</b>, ... <strong class="highText">IEEE WCNC 2024</strong></li>
+          </ul>
+        </div>
       </div>
 
-      <div id="conferences2025" class="tab-content">
-        <ul>
-          <li><b>Amritesh Kumar</b>, Nitin Bhatia, Debasis Das, "Grouping nodes based PBFT for Preventing Fake Educational Certificates Verification" <strong class="highText">26th International Conference on Distributed Computing and Networking</strong></li>
-        </ul>
+      <!-- 2023 Tabs -->
+      <div class="tab-year">
+        <div class="year-heading">********** 2023 **********</div>
+        <div class="tab-buttons">
+          <button class="tablink active" onclick="openTab(event, 'journals2023')">Journals</button>
+          <button class="tablink" onclick="openTab(event, 'conf2023')">Conferences</button>
+        </div>
+        <div id="journals2023" class="tab-content active">
+          <ul>
+            <li><b>Jayant Vyas</b>, ... <strong class="highText">Expert Systems with Applications</strong></li>
+            <li><b>Ankur Nahar</b>, ... <strong class="highText">Ad-Hoc Networks</strong></li>
+            <li><b>Amritesh Kumar</b>, ... <strong class="highText">Vehicular Communications</strong></li>
+          </ul>
+        </div>
+        <div id="conf2023" class="tab-content">
+          <ul>
+            <li><b>Ankur Nahar</b>, ... <strong class="highText">CCGrid 2023</strong></li>
+            <li><b>Jayant Vyas</b>, ... <strong class="highText">VTC 2023-Fall</strong></li>
+            <li><b>Ankur Nahar</b>, ... <strong class="highText">IWCMC 2023</strong></li>
+          </ul>
+        </div>
       </div>
     </div>
-
-    <!-- Continue other years here -->
-    <!-- Paste your existing 2024, 2023, etc. publication sections below this point -->
-    
   </main>
 
-  <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
@@ -164,9 +186,9 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h3>VANETs Lab</h3>
             <p>
-              Indian Institute of Technology <br>
-              NH 65, Surpura Bypass Road, Karwar<br>
-              Jodhpur, Rajasthan, 342037<br><br>
+              IIT Jodhpur<br>
+              NH 65, Karwar, Jodhpur<br>
+              Rajasthan, 342037<br><br>
               <strong>Phone:</strong> (+91 291) 280 1261<br>
               <strong>Email:</strong> debasis@iitj.ac.in<br>
             </p>
@@ -174,42 +196,13 @@
         </div>
       </div>
     </div>
-
-    <div class="container d-md-flex py-4">
-      <div class="me-md-auto text-center text-md-start">
-        <div class="copyright">
-          &copy; Copyright <strong><span>VANETs Lab</span></strong>. All Rights Reserved
-        </div>
-      </div>
-      <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
-    </div>
   </footer>
-  <!-- End Footer -->
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="../assets/vendor/aos/aos.js"></script>
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/php-email-form/validate.js"></script>
-  <script src="../assets/vendor/purecounter/purecounter.js"></script>
-  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="../assets/js/main.js"></script>
-
-  <!-- Tabs Switcher Script -->
   <script>
     function openTab(evt, tabId) {
-      const tabs = document.querySelectorAll('.tab-content');
-      const buttons = document.querySelectorAll('.tablink');
+      const container = evt.currentTarget.closest('.tab-year');
+      const tabs = container.querySelectorAll('.tab-content');
+      const buttons = container.querySelectorAll('.tablink');
 
       tabs.forEach(tab => tab.classList.remove('active'));
       buttons.forEach(btn => btn.classList.remove('active'));
@@ -218,6 +211,6 @@
       evt.currentTarget.classList.add('active');
     }
   </script>
-
 </body>
+
 </html>
