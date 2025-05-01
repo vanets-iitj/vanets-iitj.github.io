@@ -230,7 +230,7 @@
         </div> -->
 
 <style>
-  .member-compact {
+/*   .member-compact {
     display: flex;
     align-items: center;
     background: #f9f9f9;
@@ -239,7 +239,20 @@
     margin-bottom: 10px;
     gap: 10px;
     box-shadow: 0 0 5px rgba(0,0,0,0.05);
-  }
+  } */
+  .member-compact {
+  display: flex;
+  align-items: flex-start; /* better for text-based alignment */
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 10px;
+  gap: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+  overflow: hidden;
+  min-height: 150px; /* ensure equal heights if needed */
+}
+
 
   .member-compact img {
     width: 80px;
@@ -253,6 +266,10 @@
     line-height: 1.4;
   }
 
+  .member-compact .info p {
+  word-break: break-word;
+  margin: 5px 0;
+}
   .member-compact .info h4 {
     font-size: 15px;
     margin: 0 0 4px;
