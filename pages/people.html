@@ -116,270 +116,370 @@
         
 
 <style>
-  
-  .member-compact {
-  display: flex;
-  align-items: flex-start; /* better for text-based alignment */
-  background: #f9f9f9;
-  border-radius: 8px;
-  padding: 8px;
-  margin-bottom: 10px;
-  gap: 10px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.05);
-  overflow: hidden;
-  min-height: 150px; /* ensure equal heights if needed */
-}
+  /* =========================
+     PEOPLE PAGE: PROFILE CARD
+     ========================= */
 
-  /* People page: smaller profile image, consistent look */
-.member .people-photo{
-  width: 220px;          /* change to 180/200/240 as you like */
-  height: 220px;
-  object-fit: cover;     /* crops to keep ratio nice */
-  border-radius: 10px;   /* matches modern card style */
-  display: block;
-  margin: 0 auto 12px;   /* center + spacing */
-}
-
-  
-  .member-compact img {
-    width: 80px;
-    height: 80px;
+  /* Debasis card image (unchanged) */
+  .member .people-photo{
+    width: 220px;
+    height: 220px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 12px;
   }
 
-  .member-compact .info {
+  /* Section title spacing */
+  .breadcrumbs-lite{
+    padding: 18px 0;
+    background: #f6f7f6;
+    border-top: 1px solid rgba(0,0,0,0.06);
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    margin-top: 25px;
+  }
+  .breadcrumbs-lite h2{
+    margin: 0;
+    font-size: 22px;
+    font-weight: 800;
+  }
+
+  /* Strong grid */
+  .member-wrapper{
+    display: grid;
+    gap: 16px;
+    margin-top: 14px;
+  }
+  @media (min-width: 768px){
+    .member-wrapper{ grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 1200px){
+    .member-wrapper{ grid-template-columns: repeat(3, 1fr); }
+  }
+
+  /* Card */
+  .member-compact{
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 14px;
+    border: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    transition: transform .18s ease, box-shadow .18s ease;
+    overflow: hidden;
+    height: 100%;
+  }
+  .member-compact:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 14px 34px rgba(0,0,0,0.10);
+  }
+
+  /* Top row: photo + name/meta */
+  .member-compact .head{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .member-compact .avatar{
+    width: 74px;
+    height: 74px;
+    border-radius: 14px;   /* modern square avatar */
+    object-fit: cover;
+    border: 1px solid rgba(0,0,0,0.08);
+    flex: 0 0 auto;
+    background: #f2f2f2;
+  }
+
+  .member-compact .title{
+    min-width: 0;
+  }
+  .member-compact .title h4{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.25;
+  }
+  .member-compact .title .meta{
+    margin: 2px 0 0;
+    font-size: 12.5px;
+    opacity: 0.85;
+    font-weight: 600;
+  }
+
+  /* Research line */
+  .member-compact .desc{
+    margin: 0;
     font-size: 13px;
-    line-height: 1.4;
+    line-height: 1.55;
+    opacity: 0.95;
+  }
+  .member-compact .desc b{
+    font-weight: 800;
   }
 
-  .member-compact .info p {
-  word-break: break-word;
-  margin: 5px 0;
-}
-  .member-compact .info h4 {
-    font-size: 15px;
-    margin: 0 0 4px;
+  /* Action links row */
+  .member-compact .actions{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  .member-compact .actions a{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12.5px;
+    font-weight: 700;
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(0,0,0,0.10);
+    background: #fbfbfb;
+    color: #2c4964;
+  }
+  .member-compact .actions a:hover{
+    background: #eef3f9;
   }
 
-  @media (min-width: 768px) {
-    .member-wrapper {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-    }
+  /* Email line */
+  .member-compact .email{
+    margin-top: 10px;
+    font-size: 12.5px;
+    font-weight: 700;
+    opacity: 0.9;
+  }
+  .member-compact .email a{
+    color: #2c4964;
+    text-decoration: none;
+  }
+  .member-compact .email a:hover{
+    text-decoration: underline;
   }
 
-  @media (min-width: 1200px) {
-    .member-wrapper {
-      grid-template-columns: repeat(3, 1fr);
-    }
+  /* small label chips (optional) */
+  .chip{
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 800;
+    background: #f1f5f9;
+    border: 1px solid rgba(0,0,0,0.08);
+    margin-right: 6px;
   }
 </style>
-  
-<!-- Breadcrumb Current PhD Students-->
-<div class="breadcrumbs-lite">
-  <div class="container">
-    <h2>Current Ph.D. Students</h2>
-  </div>
-</div>
 
+  
 <div class="container" data-aos="fade-up">
   <div class="member-wrapper">
-    
-        <!-- # 1 -->
-        <div class="member-compact">
-        <img src="../assets/img/people/bhumika.jpg" class="img-fluid" alt="Bhumika">
-        <div class="info">
+
+    <!-- # 1 -->
+    <div class="member-compact">
+      <div class="head">
+        <img src="../assets/img/people/bhumika.jpg" class="avatar" alt="Bhumika" loading="lazy" decoding="async">
+        <div class="title">
           <h4>Bhumika</h4>
-          <p>
-            Bhumika received her B.Tech. from Himachal Pradesh Technical University (2016) and M.Tech. in CSE from CDAC Noida (2019).
-            She is currently pursuing her Ph.D. at IIT Jodhpur.
-            Her research interests include vehicular machine learning, social network analysis, and NLP.
-          </p>
-          <span><a href="https://cbhumika.github.io/">Website Portfolio</a></span>
-              <div class="social">
-                <p><i class="bi bi-envelope"></i> bhumika@iitj.ac.in</p>
-              </div>
+          <div class="meta">Ph.D. Scholar, IIT Jodhpur</div>
         </div>
       </div>
+      <p class="desc">
+        <span class="chip">Interests</span>
+        Vehicular ML, Social Network Analysis, NLP.
+      </p>
+      <div class="actions">
+        <a href="https://cbhumika.github.io/" target="_blank" rel="noopener noreferrer"><i class="bi bi-link-45deg"></i> Portfolio</a>
+      </div>
+      <div class="email">
+        <i class="bi bi-envelope"></i>
+        <a href="mailto:bhumika@iitj.ac.in">bhumika@iitj.ac.in</a>
+      </div>
+    </div>
 
-        <!-- # 2 -->
-        <div class="member-compact">
-          <img src="../assets/img/people/jayant_vyas.jpg" class="img-fluid" alt="Jayant">
-          <div class="info">
-            <h4>Jayant Vyas</h4>
-              <p>
-                Jayant Vyas received the B.Tech. degree in Information Technology from the Rajiv Gandhi Proudyogiki 
-                Vishwavidyalaya, Bhopal, India, in 2013, and the M.Tech. degree in Computer Science and Engineering from the 
-                Indian Institute of Technology, Patna, India, in 2016. He is currently pursuing the PhD degree with the 
-                Department of Computer Science and Engineering, Indian Institute of Technology, Jodhpur, India. His research 
-                interests include intelligent transportation system, human-machine interaction, machine learning, and 
-                real-time scheduling.
-              </p>
-              <span><a href="https://scholar.google.com/citations?hl=en&user=-9qXBO4AAAAJ">Google Scholar Profile</a></span><br>
-              <span><a href="https://sites.google.com/view/jayantvyas">Website Portfolio</a></span><br>
-                  <div class="social">
-                    <p href=""><i class="bi bi-envelope"></i> vyas.3@iitj.ac.in</p>
-                  </div>
-            </div>
-          </div>
+    <!-- # 2 -->
+    <div class="member-compact">
+      <div class="head">
+        <img src="../assets/img/people/jayant_vyas.jpg" class="avatar" alt="Jayant Vyas" loading="lazy" decoding="async">
+        <div class="title">
+          <h4>Jayant Vyas</h4>
+          <div class="meta">Ph.D. Scholar, CSE, IIT Jodhpur</div>
+        </div>
+      </div>
+      <p class="desc">
+        <span class="chip">Interests</span>
+        Intelligent Transportation Systems, HMI, ML, Real-time Scheduling.
+      </p>
+      <div class="actions">
+        <a href="https://scholar.google.com/citations?hl=en&user=-9qXBO4AAAAJ" target="_blank" rel="noopener noreferrer"><i class="bi bi-mortarboard"></i> Scholar</a>
+        <a href="https://sites.google.com/view/jayantvyas" target="_blank" rel="noopener noreferrer"><i class="bi bi-link-45deg"></i> Portfolio</a>
+      </div>
+      <div class="email">
+        <i class="bi bi-envelope"></i>
+        <a href="mailto:vyas.3@iitj.ac.in">vyas.3@iitj.ac.in</a>
+      </div>
+    </div>
 
-        <!-- # 3 -->
-          <div class="member-compact">
-            <img src="../assets/img/people/Amritesh.png" class="img-fluid" alt="Amritesh">
-            <div class="info">
-              <h4>Amritesh Kumar</h4>
-              <p>
-                Amritesh Kumar received his M.Tech. in Computer Science and Engineering from KIIT University, Bhubaneswar, 
-                Odisha. He is currently pursuing the 
-                PhD degree with the IDRP: IoT and Applications, Indian Institute of Technology, Jodhpur, 
-                India. His research interests includes Internet of Things (IoT), Internet of Vehicles 
-                (IoV), and Blockchain.
-              </p>
-              <span><a href="https://scholar.google.com/citations?hl=en&user=0-yViHIAAAAJ&view_op=list_works&authuser=1&sortby=pubdate">
-                Google Scholar Profile</a></span><br>
-              <span><a href="https://iitj.ac.in/iot/index.php?id=students">Google sites</span><br>
-                  <div class="social">
-                    <p href=""><i class="bi bi-envelope"></i> amritesh.1@iitj.ac.in</p>
-                  </div>
-            </div>
-          </div>
+    <!-- # 3 -->
+    <div class="member-compact">
+      <div class="head">
+        <img src="../assets/img/people/Amritesh.png" class="avatar" alt="Amritesh Kumar" loading="lazy" decoding="async">
+        <div class="title">
+          <h4>Amritesh Kumar</h4>
+          <div class="meta">Ph.D. Scholar, IDRP (IoT &amp; Applications), IIT Jodhpur</div>
+        </div>
+      </div>
+      <p class="desc">
+        <span class="chip">Interests</span>
+        IoT, IoV, Blockchain.
+      </p>
+      <div class="actions">
+        <a href="https://scholar.google.com/citations?hl=en&user=0-yViHIAAAAJ&view_op=list_works&authuser=1&sortby=pubdate" target="_blank" rel="noopener noreferrer"><i class="bi bi-mortarboard"></i> Scholar</a>
+        <a href="https://iitj.ac.in/iot/index.php?id=students" target="_blank" rel="noopener noreferrer"><i class="bi bi-link-45deg"></i> Profile</a>
+      </div>
+      <div class="email">
+        <i class="bi bi-envelope"></i>
+        <a href="mailto:amritesh.1@iitj.ac.in">amritesh.1@iitj.ac.in</a>
+      </div>
+    </div>
 
-          <!-- # 4 -->
-      
-            <!-- # 4 -->
-          <div class="member-compact">
-            <img src="../assets/img/people/preeti.jpg" class="img-fluid" alt="Preeti">
-            <div class="info">
-              <h4>Preeti Jain</h4>
-              <p>
-                Preeti Jain received the B.Tech. degree in Electronics and Instrumentation Engineering from Gautam Buddha 
-                Technical University, India, in 2012, and the M.Tech. degree in Signal Processing from AIACTR (now NSUT EAST 
-                CAMPUS), Delhi, India, in 2019. She is currently pursuing an interdisciplinary Ph.D. in the Internet of Things 
-                and Applications at the Indian Institute of Technology, Jodhpur, India. Her research interests include Vehicular 
-                Ad-hoc Networks, Machine Learning, and the Internet of Things.
-              </p>
-              <span><a href="https://www.linkedin.com/in/preeti-jain-563195158">LinkedIn Profile</a></span><br>
-                  <div class="social">
-                    <p href=""><i class="bi bi-envelope"></i> preeti.1@iitj.ac.in</p>
-                  </div>
-            </div>
-          </div>
+    <!-- # 4 -->
+    <div class="member-compact">
+      <div class="head">
+        <img src="../assets/img/people/preeti.jpg" class="avatar" alt="Preeti Jain" loading="lazy" decoding="async">
+        <div class="title">
+          <h4>Preeti Jain</h4>
+          <div class="meta">Ph.D. Scholar, IDRP (IoT &amp; Applications), IIT Jodhpur</div>
+        </div>
+      </div>
+      <p class="desc">
+        <span class="chip">Interests</span>
+        Vehicular Ad-hoc Networks, Machine Learning, IoT.
+      </p>
+      <div class="actions">
+        <a href="https://www.linkedin.com/in/preeti-jain-563195158" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i> LinkedIn</a>
+      </div>
+      <div class="email">
+        <i class="bi bi-envelope"></i>
+        <a href="mailto:preeti.1@iitj.ac.in">preeti.1@iitj.ac.in</a>
+      </div>
+    </div>
 
+    <!-- # 5 (Optional: if Nandini is current, you can add back; else keep in Graduated) -->
 
-          <!-- # 5 -->
-          <!-- <div class="member-compact">
-            <img src="../assets/img/people/Nandini.png" class="img-fluid" alt="Nandini">
-            <div class="info">
-              <h4>Nandini Saini</h4>
-              <p>
-                Nandini Saini received her B.Tech. and M.Tech degree in Information Technology from 
-                the Atal Bihari Vajpayee Indian Institute of Information Technology and Management, Gwalior, India, in 2018. 
-                She is currently pursuing Ph.D. in the area of Decision support system for smart surveillance at the Indian Institute of Technology, Jodhpur, India.
-                Her research interests include machine learning, deep learning, and computer vision.
-              </p>
-              <span><a href="linkedin.com/in/nandini-saini-175b7882">LinkedIn Profile</a></span><br>
-              <span><a href="github.com/nandini211995">Website Portfolio</a></span><br>
-                  <div class="social">
-                    <p href=""><i class="bi bi-envelope"></i> saini.9@iitj.ac.in</p>
-                  </div>
-            </div>
-          </div> -->
+    <!-- # 6 -->
+    <div class="member-compact">
+      <div class="head">
+        <img src="../assets/img/people/Monu_Nagar.jpg" class="avatar" alt="Monu Nagar" loading="lazy" decoding="async">
+        <div class="title">
+          <h4>Monu Nagar</h4>
+          <div class="meta">Part-time Ph.D. Scholar, IIT Jodhpur</div>
+        </div>
+      </div>
+      <p class="desc">
+        <span class="chip">Interests</span>
+        Automation, Deep Learning, Computer Vision, AI.
+      </p>
+      <div class="actions">
+        <a href="https://www.linkedin.com/in/monu-nagar-63a19699/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i> LinkedIn</a>
+        <a href="https://sites.google.com/iitj.ac.in/monu-nagar/home" target="_blank" rel="noopener noreferrer"><i class="bi bi-link-45deg"></i> Portfolio</a>
+      </div>
+      <div class="email">
+        <i class="bi bi-envelope"></i>
+        <a href="mailto:nagar.3@iitj.ac.in">nagar.3@iitj.ac.in</a>
+      </div>
+    </div>
 
-          <!-- # 6 -->
-          <div class="member-compact">
-            <img src="../assets/img/people/Monu_Nagar.jpg" class="img-fluid" alt="Monu">
-            <div class="info">
-              <h4>Monu Nagar</h4>
-              <p>
-                Monu Nagar is a part-time PhD scholar at the Indian Institute of Technology, Jodhpur. 
-                He received his part-time executive M.Tech. degree in Computer Science (CSE) from the Indian Institute of Technology, Jodhpur
-                in 2022. His research interests include Machine Automation, Deep Learning, Computer Vision, and Artificial Intelligence. 
-              </p>
-              <span><a href="https://www.linkedin.com/in/monu-nagar-63a19699/">LinkedIn Profile</a></span><br>
-              <span><a href="https://sites.google.com/iitj.ac.in/monu-nagar/home">Website Portfolio</a></span><br>
-                  <div class="social">
-                    <p href=""><i class="bi bi-envelope"></i>nagar.3@iitj.ac.in</p>
-                  </div>
-            </div>
-          </div>
+    <!-- # 7 -->
+    <div class="member-compact">
+      <div class="head">
+        <img src="../assets/img/people/Koustav.jpg" class="avatar" alt="Koustav Kumar Mondal" loading="lazy" decoding="async">
+        <div class="title">
+          <h4>Koustav Kumar Mondal</h4>
+          <div class="meta">Ph.D. Scholar, IDRP (IoT &amp; Applications), IIT Jodhpur</div>
+        </div>
+      </div>
+      <p class="desc">
+        <span class="chip">Interests</span>
+        AI-empowered MEC, IoT/IoV, MLOps/DLOps, Blockchain.
+      </p>
+      <div class="actions">
+        <a href="https://scholar.google.com/citations?user=foRcVNQAAAAJ" target="_blank" rel="noopener noreferrer"><i class="bi bi-mortarboard"></i> Scholar</a>
+        <a href="https://www.linkedin.com/in/takmashhido/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i> LinkedIn</a>
+        <a href="https://takmashhido.github.io/" target="_blank" rel="noopener noreferrer"><i class="bi bi-link-45deg"></i> Portfolio</a>
+      </div>
+      <div class="email">
+        <i class="bi bi-envelope"></i>
+        <a href="mailto:mondal.4@iitj.ac.in">mondal.4@iitj.ac.in</a>
+      </div>
+    </div>
 
-          <!-- # 7 -->
-          <div class="member-compact">
-            <img src="../assets/img/people/Koustav.jpg" class="img-fluid" alt="Koustav">
-            <div class="info">
-              <h4>Koustav Kumar Mondal</h4>
-              <p>
-                Koustav Kumar Mondal, a research scholar at Indian Institute of Technology, Jodhpur, is pursuing his PhD in 
-                "Exploring the AI-Empowered Mobile Edge Computing in the Internet of Things for Electric Vehicles" under the 
-                Inter-Disciplinary Research Division - IoT and Application. He has completed his M.Tech in Internet of Things 
-                from Maulana Abul Kalam Azad University of Technology and his research interests include AI-Empowered Mobile 
-                Edge Computing, IoT, IoV, MLOps, DLOps, Machine Learning, Deep Learning and Blockchain. 
-              </p>
-              <span><a href="https://scholar.google.com/citations?user=foRcVNQAAAAJ">Google Scholar Profile</a></span><br>
-              <span><a href="https://www.linkedin.com/in/takmashhido/">LinkedIn Profile</a></span><br>
-              <span><a href="https://takmashhido.github.io/">Website Portfolio</a></span><br></br>
-                  <div class="social">
-                    <p href=""><i class="bi bi-envelope"></i> mondal.4@iitj.ac.in</p>
-                  </div>
-            </div>
-          </div>
-
-        <!-- # 8 -->
-          <div class="member-compact">
-            <img src="../assets/img/people/Aarju.jpg" class="img-fluid" alt="Aarju">
-            <div class="info">
-              <h4>Aarju Dixit</h4>
-              <p>
-                Aarju Dixit, a research scholar at the Indian Institute of Technology, Jodhpur. 
-                She received her B.Tech. and M.Tech. degree in Computer Science (CSE) from Rajiv Gandhi Proudyogiki Vishwavidyalaya [RGPV].
-                Her research interests include healthcare applications related to the  Internet of Things (IoT), Machine Learning, and Deep Learning. 
-              </p>
-              <span><a href="https://www.linkedin.com/in/aarju-dixit-707875276/">LinkedIn Profile</a></span><br>
-              <span><a href="https://sites.google.com/view/aarjudixit/home">Website Portfolio</a></span><br>
-              <span><a href="https://scholar.google.com/citations?user=IbO2xxUAAAAJ&hl=en">Google Scholar Profile</a></span><br>
-             
-                  <div class="social">
-                    <p href=""><i class="bi bi-envelope"></i>p23cs0001@iitj.ac.in</p>
-                  </div>
-            </div>
-          </div>
+    <!-- # 8 -->
+    <div class="member-compact">
+      <div class="head">
+        <img src="../assets/img/people/Aarju.jpg" class="avatar" alt="Aarju Dixit" loading="lazy" decoding="async">
+        <div class="title">
+          <h4>Aarju Dixit</h4>
+          <div class="meta">Ph.D. Scholar, IIT Jodhpur</div>
+        </div>
+      </div>
+      <p class="desc">
+        <span class="chip">Interests</span>
+        Healthcare IoT, Machine Learning, Deep Learning.
+      </p>
+      <div class="actions">
+        <a href="https://scholar.google.com/citations?user=IbO2xxUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><i class="bi bi-mortarboard"></i> Scholar</a>
+        <a href="https://www.linkedin.com/in/aarju-dixit-707875276/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i> LinkedIn</a>
+        <a href="https://sites.google.com/view/aarjudixit/home" target="_blank" rel="noopener noreferrer"><i class="bi bi-link-45deg"></i> Portfolio</a>
+      </div>
+      <div class="email">
+        <i class="bi bi-envelope"></i>
+        <a href="mailto:p23cs0001@iitj.ac.in">p23cs0001@iitj.ac.in</a>
+      </div>
+    </div>
 
     <!-- # 9 -->
-      <div class="member-compact">
-      <img src="../assets/img/people/Ayanabha3.jpg" alt="Ayanabha">
-      <div class="info">
-        <h4>Ayanabha Ghosh</h4>
-        <p>Ayanabha Ghosh is a PhD student at the Indian Institute of Technology Jodhpur. 
-                He completed his MTech from IIT Jodhpur in 2023. His current research area involves developing 
-                Causal ML and Explainable AI techniques for Time Series data, 
-                with an application on prognostics and health management of vehicles and industrial equipment.</p> 
-         <span><a href="https://scholar.google.com/citations?user=oB4N3H4AAAAJ&hl=en">Google Scholar Profile</a></span><br>
-        <span><a href="https://www.linkedin.com/in/ayanabha-ghosh-cs/?originalSubdomain=in">LinkedIn Profile</a></span><br>
-        <span><a href="https://sites.google.com/view/ayanabha">Website Portfolio</a></span><br></br>
-          <div class="social">
-                  <p href=""><i class="bi bi-envelope"></i>p23iot002@iitj.ac.in</p>
-          </div>
+    <div class="member-compact">
+      <div class="head">
+        <img src="../assets/img/people/Ayanabha3.jpg" class="avatar" alt="Ayanabha Ghosh" loading="lazy" decoding="async">
+        <div class="title">
+          <h4>Ayanabha Ghosh</h4>
+          <div class="meta">Ph.D. Scholar, IIT Jodhpur</div>
+        </div>
+      </div>
+      <p class="desc">
+        <span class="chip">Interests</span>
+        Causal ML &amp; XAI for Time-Series; Prognostics &amp; Health Management.
+      </p>
+      <div class="actions">
+        <a href="https://scholar.google.com/citations?user=oB4N3H4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><i class="bi bi-mortarboard"></i> Scholar</a>
+        <a href="https://www.linkedin.com/in/ayanabha-ghosh-cs/?originalSubdomain=in" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i> LinkedIn</a>
+        <a href="https://sites.google.com/view/ayanabha" target="_blank" rel="noopener noreferrer"><i class="bi bi-link-45deg"></i> Portfolio</a>
+      </div>
+      <div class="email">
+        <i class="bi bi-envelope"></i>
+        <a href="mailto:p23iot002@iitj.ac.in">p23iot002@iitj.ac.in</a>
       </div>
     </div>
 
     <!-- # 10 -->
-     <div class="member-compact">
-       <img src="..\assets\img\people\Nidhi2.jpg" class="img-fluid" alt="Nidhi">
-        <div class="info">
-         <h4>Nidhi Srivastava</h4>
-         <p>Nidhi Srivastava is a research scholar pursuing her Ph.D. at the Indian Institute of Technology, Jodhpur. 
-            She received her M.Tech. degree in Computer Science (CSE) from the National Institute of Technology, 
-            Rourkela, Odisha, in 2024. Her research interests include Blockchain, Cyber Security, 
-            Digital Forensics, Machine Learning, and Deep Learning.
-         </p>
-         <span><a href="https://www.linkedin.com/in/nidhi-srivastava-471a551ab/">LinkedIn Profile</a></span><br>
-             <div class="social">
-                  <p href=""><i class="bi bi-envelope"></i>p23cs0013@iitj.ac.in</p>
-            </div>
-     </div>
-     </div>
+    <div class="member-compact">
+      <div class="head">
+        <img src="../assets/img/people/Nidhi2.jpg" class="avatar" alt="Nidhi Srivastava" loading="lazy" decoding="async">
+        <div class="title">
+          <h4>Nidhi Srivastava</h4>
+          <div class="meta">Ph.D. Scholar, IIT Jodhpur</div>
+        </div>
+      </div>
+      <p class="desc">
+        <span class="chip">Interests</span>
+        Blockchain, Cyber Security, Digital Forensics, ML/DL.
+      </p>
+      <div class="actions">
+        <a href="https://www.linkedin.com/in/nidhi-srivastava-471a551ab/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i> LinkedIn</a>
+      </div>
+      <div class="email">
+        <i class="bi bi-envelope"></i>
+        <a href="mailto:p23cs0013@iitj.ac.in">p23cs0013@iitj.ac.in</a>
+      </div>
+    </div>
 
   </div>
 </div>
@@ -701,6 +801,7 @@
 </body>
 
 </html>
+
 
 
 
