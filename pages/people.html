@@ -139,6 +139,25 @@
   display: block;
   margin: 0 auto 12px;   /* center + spacing */
 }
+
+  /* ===== Preeti (and all PhD student cards) image + text polish ===== */
+.member-compact .member-photo{
+  width: 150px;              /* smaller + consistent */
+  height: 150px;
+  object-fit: cover;         /* no stretching, crops cleanly */
+  border-radius: 12px;       /* nicer profile feel */
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Optional but recommended: gives clean hierarchy */
+.member-compact .info .meta{
+  margin: 0 0 8px 0;
+  font-size: 0.92rem;
+  opacity: 0.9;
+  font-weight: 600;
+}
+
   
   .member-compact img {
     width: 80px;
@@ -697,6 +716,7 @@
 </body>
 
 </html>
+
 
 
 
