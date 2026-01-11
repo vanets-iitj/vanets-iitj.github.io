@@ -73,152 +73,412 @@
 
     <div class="pub-container container">
       <br/><br/>
+      <!-- ======= PERSON-WISE ACHIEVEMENTS (Clickable Names) ======= -->
+<style>
+  /* minimal page-local styling; works with your existing VANETs theme + bootstrap */
+  .achv-wrap { padding-top: 10px; padding-bottom: 20px; }
+  .achv-note { opacity: 0.9; margin: 0 0 10px 0; }
+  .person-tabs .nav-link { font-weight: 700; border-radius: 10px; }
+  .person-tabs .nav-link.active { box-shadow: 0 6px 18px rgba(0,0,0,0.06); }
+  .achv-acc .accordion-item { border-radius: 12px; overflow: hidden; border: 1px solid rgba(0,0,0,0.08); }
+  .achv-acc .accordion-button { font-weight: 700; }
+  .achv-acc .accordion-body ul { margin: 0; padding-left: 18px; }
+  .achv-acc .accordion-body li { line-height: 1.75; margin-bottom: 6px; }
+  .badge-yr { font-size: .75rem; padding: 6px 10px; border-radius: 999px; font-weight: 700; }
+  .badge-2025 { background: #2ca35f; color: #fff; }
+  .badge-2024 { background: #1f6feb; color: #fff; }
+  .badge-2023 { background: #6f42c1; color: #fff; }
+  .badge-2022 { background: #d29922; color: #111; }
+  .badge-2021 { background: #9a6700; color: #fff; }
+  .badge-2020 { background: #57606a; color: #fff; }
+  .badge-2019 { background: #0b7285; color: #fff; }
+  .badge-2015 { background: #0f766e; color: #fff; }
+  @media (max-width: 992px) {
+    .person-tabs { margin-bottom: 12px; }
+  }
+</style>
 
-      <ol>
-        <li>Dr. Debasis Das Awarded DST-NSF Project 2025, National Science Foundation (NSF), USA, 
-          and the Department of Science and Technology (DST) of India.</li>
-        <li>Dr. Debasis Das received the NSTC Research Award-2025, National Science and Technology Council(NSTC), Taiwan, 
-          National Sun Yat-sen University(NSYSU), Taiwan.</li> 
-        <li>Dr. Debasis Das received the Young Researcher Award, 2024 (Engineering Discipline), 
-          Indian Institute of Technology (IIT) Jodhpur, Rajasthan, India. </li>
-        <li>Dr. Debasis Das received the World’s Top 2% Scientists, 2024  
-          Stanford/Elsevier’s Top 2% Scientist Rankings framework, USA. </li>
-        <li>Dr. Debasis Das received the BRICS Young Scientist Award 2022 at the BRICS Young Scientists Conclave, organized by the Government of India.</li>
-        <li>International Mobility Research Grant Award 2021,  Indian Institute of Technology(IIT) Jodhpur, Rajasthan, India.</li>
-        <li>Dr. Debasis Das received the Best Paper Award in the IEEE 33rd International Conference on Information Networking (ICOIN 2019), January 9-11, 2019, 
-          Kuala Lumpur, Malaysia(Core Ranking: Core B), 2019, IEEE</li>
-        <li>Dr. Debasis Das received the Best Paper Award, 7th International Conference on Future Computer and Communication (ICFCC 2015), 
-          Nanyang Technological University, Nanyang Avenue, Singapore, 2015.</li>
-        <li>Dr. Debasis Das was the Visiting Scholar, Department of Computer Science & Electrical Engineering, School of Computing & Engineering, 
-          University of Missouri-Kansas City, Kansas City, MO 64110, US. </li>
-        <li>Dr. Debasis Das received the Early Career Research(ECR) Award from the Science & Engineering Research Board (SERB), 
-          Department Of Science & Technology, Govt. of India, New Delhi, India, From 2016 To 2020.</li>
-        <li>Dr. Debasis Das received the IEEE Senior Member grade for the IEEE Society and IEEE Vehicular Technology Society (VTS) during Feb 2021.</li>
-        <li>Miss Ashi Gupta was Awarded Registration <strong class="highText">and a Travel Grant</strong>
-          to attend the Graduate Forum to present 
-          her work in The Fifth Indian Symposium on Machine Learning (INDO-ML) at BITS Pilani, Goa Campus, in December 2024
-          </li>
-        <li>Miss Ashi Gupta was selected<strong class="highText">to attend and present</strong>her work in ML 
-          and IoV in the National Innovation Awards 2024, at PIET, Samalkha, in November 2024.</li>
-        <li>Mr. Shreyansh Sharma received <strong class="highText">Best Poster Award </strong>at the National Workshop on Mobile Device and Application Security 
-          organized by IIT Jammu</li>
-        <li>Mr. Shreyansh Sharma is the winner of <strong class="highText">Name of the International Relations Newsletter </strong>organized by the International 
-          Relations Office, IIT Jodhpur.</li>
-        <li>Mr. Shreyansh Sharma, Mr. Ankur Nahar, Mr. Lokendra Vishwakarma received <strong class="highText">Paper accepted for presentation </strong>in ACM ARCS 2024 with Registration & Travel Grant.</li>
-        <li>Mr. Shreyansh Sharma received <strong class="highText">Registration & Travel Grant</strong> for attending IndoML 2024, BITS Pilani.</li>
-        <li>Mr. Jayant Vyas received <strong class="highText">IEEE VTS Student Travel Grant</strong> for attending IEEE VTC 2023-Fall in Hong Kong.</li>
-        <li>Mr. Jayant Vyas selected as <strong class="highText">Session Chair</strong> at IEEE VTC 2023-Fall for Vehicular Electronics Track.</li>
-        <li> 
-          Mr. Ankur Nahar selected as <strong class="highText">BRICS Young Scientist 2023</strong> by Govt. of India for BRICS Young Scientist Conclave, South Africa.
-        </li>
-        <li> 
-          Mr. Ankur Nahar received <strong class="highText">International Travel Support (ITS) Award, 2023. </strong> from Science and Engineering Research Board(SERB), Govt. of India.
-        </li>
-        <li> 
-          Mr. Jayant Vyas selected for Research Internship as R&D Specialist at <strong class="highText">Accenture Labs Bangalore (May-Nov 2023). </strong>
-        </li>
-        <li>Ms. Bhumika received a Travel grant to attend  <strong class="highText">ACM India Grad Cohort 2023. July 6-7, 2023 </strong>| IISC Banglore, India
-        <li> Ms. Bhumika selected for the attending the summer school in <strong class="highText">Climate Change AI Summer School 2023.</strong> June 23-July 27, 2023 (Virtual Mode)
-        </li>
-        <li>
-          Mr. Lokendra Vishwakarma, Mr. Ankur Nahar, and  Mr. Amritesh Kumar received Registration & Travel Grant for attending <strong class="highText"> CCGrid Conference 2023.</strong>
-        </li>
-        <li> Mr. Ankur Nahar and Mr. Amritesh Kumar received Registration & Travel Grant for attending <strong class="highText">ACM ICDCN 2023.</strong>
-          </li>
-        <li>
-          Mr. Ankur Nahar, PhD Student working under the guidance of Dr. Debasis Das,  selected for <strong class="highText">ACM India Anveshan Setu Fellowship, 2023.</strong>
-      </li>
-          <li>
-              Mr. Jayant Vyas received <strong class="highText"> Best Poster Award </strong> secured first position in poster presentation for the theme: Dependable and Responsible AI of the <strong class="highText"> Industry Day-2023 </strong> organized by the Indian Institute of Technology Jodhpur from 3-4 February, 2023. Poster Title: Federated Learning-Based Recommender System for Next-Generation Transportation.
-          </li>
-        <li>
-       Mr. Jayant Vyas, Mr. Shreyansh Sharma, and Ms. Shruti Sureshan received Registration & Travel Grant for attending <strong class="highText"> 6th Joint International Conference on Data Science & Management of Data (CODS-COMAD 2023) </strong> January 4-7, 2023 | IIT Bombay, India
-        </li>
-        <li>Ms. Shruti Sureshan and Debasis Das. 2-page extended abstract accepted in the  6th Joint International Conference on
-Data Science Management of Data (10th ACM IKDD CODS and 28th COMAD) (CODS-COMAD 2023), January 4–7, 2023, Mumbai, India, titled Few-Shot Learning based Anomaly Detection in Security Applications. <strong class="highText">(Young Research Symposium)</strong>
-        </li>
-        <li>Ms. Shruti Sureshan, Bhumika, and Debasis Das. ‘RNFSL: Relation Network for Anomaly Detection’ selected for poster presentation at the
-          <strong class="highText">Purdue Engineering Virtual Graduate Showcase 2022. </strong></li>
-          <li>
-        Mr. Jayant Vyas, Ms. Bhumika, Mr. Shreyansh Sharma, and Ms. Nandini Saini received Registration & Travel Grant for attending <strong class="highText"> Indian Symposium on Machine Learning (IndoML–2022) </strong> December 15-17, 2022 | IIT Gandhinagar, India.
-        </li>
-        <li>
-          Ms. Bhumika and Mr. Jayant Vyas, working under the guidance of Dr. Debasis Das, their proposal has been accepted for <strong class="highText">Smart Cities Innovation Competition, (SCIC)</strong> supported by Smart Cities Innovation Competition Committee, International Society for Urban Informatics (ISUI), 2022. 
-          ISUI is now inviting scholars and professionals in urban informatics and related fields to join us and build an international network together. 
-        </li>
-        <li>
-          Mr. Ankur Nahar, working under the guidance of Dr. Debasis Das, received <strong class="highText">IEEE LCN 2022 student grant</strong> for participating in the conference.
-        </li>
-        <li>
-          Ms. Bhumika, working under the guidance of Dr. Debasis Das received <strong class="highText">ECML PKDD 2022 student registration grant</strong> for participating in the conference.
-        </li>
-        <li>
-          Dr. Debasis Das received <strong class="highText">BRICS Young Scientist Award, 2022</strong> from BRICS Young Scientists Conclave, Govt. of India.
-        </li>
-        <li>
-          Dr. Debasis Das received <strong class="highText">International Travel Support (ITS) Award, 2022</strong> from Science and Engineering Research Board(SERB), Govt. of India.
-        </li>
-        <li>
-          Mr. Ankur Nahar and Mr. Amritesh Kumar, working under the guidance of Dr. Debasis Das received <strong class="highText">IEEE INFOCOM 2022 student grant</strong> for participating in the conference.
-        </li>
-        <li>
-          Mr. Ankur Nahar, and Mr. Lokendra Vishwakarma working under the guidance of Dr. Debasis Das received <strong class="highText">UNENIX ATC 
-            2021 & USENIX SECURITY 2021 student grant</strong> for participating in the conference.
-        </li>
-        <li>
-          Dr. Debasis Das received <strong class="highText">International Research Mobility Grant 2020-21</strong> from IIT Jodhpur for his international collaborations.
-        </li>
-        <li>
-          Mr. Lokendra Vishwakarma, Mr. Jayant Vyas, and Mr. Ankur Nahar working under the guidance of Dr. Debasis Das received 
-          <strong class="highText">ACM SIGMATRICS 2021 student grant</strong> for participating in ACM SIGMATRICS 2021 Conference.
-        </li>
-        <li>
-          Mr. Ankur Nahar, PhD Student working under the guidance of Dr. Debasis Das  Received <strong class="highText">ACM India Travel Award</strong> for 
-          participating and presenting his research work in <strong class="highText">IFIP Networking 2020, Paris, France</strong>.
-        </li>
-        <li>
-          Mr. Jayant Vyas, PhD Student working under the guidance of Dr. Debasis Das and Prof. Santanu Chaudhury,  selected for 
-          <strong class="highText">ACM India 2021 Anveshan Setu Fellowship, 2021</strong>.
-        </li>
-        <li>
-          Dr. Debasis Das received <strong class="highText">IEEE Vehicular Technology Society (VTS) Senior Member Award-2021</strong> from IEEE Vehicular Technology Society, USA.
-        </li>
-        <li>
-          Dr. Debasis Das received <strong class="highText">International Mobility Research Grant Award-2021</strong> from IIT Jodhpur, India.
-        </li>
-        <li>
-          Dr. Debasis Das Selected as a <strong class="highText">Poster Chair in the ACM 23rd International Conference on Distributed Computing and 
-          Networking (ICDCN 2022), IIIT Delhi, India</strong> (https://icdcn2022.iiitd.edu.in/).
-        </li>
-        <li>
-          Dr. Debasis Das Joined as a <strong class="highText">Guest Editor of the International Journal of Distributed Sensor Network ( IJDSN)</strong> [ Special 
-          Collection on Internet of Things and Cloud Computing for Smart Cities], 2020.
-        </li>
-        <li>
-          Dr. Debasis das selected for <strong class="highText">Best Paper Award in the IEEE 33th International Conference on Information Networking 
-          (ICOIN 2019)</strong> January 9-11, 2019, Kuala Lumpur, Malaysia (Core Ranking: Core B), 2019, IEEE;
-        </li>
-        <li>
-          Dr. Debasis Das selected for  <strong class="highText">Expert Committee Member( Networks), Rajasthan ILD Skills University</strong> (RISU - 
-          http://rajskills.edu.in)  (the first Government Skill University of the country and has been incorporated as 
-          Rajasthan Government State University vide Act No. 6 of 2017)  2019.
-        </li>
-        <li>
-          Dr. Debasis Das selected for <strong class="highText">Session Chair (Track 2: Enabling Technologies for Smart Cities) in the IEEE The 25th 
-          Asia-Pacific Conference on Communications (APCC)</strong> Nov 6, 2019 - Nov 8, 2019 Ho Chi Minh City, Vietnam (Core Ranking: 
-          Core B).
-        </li>
-        <li>
-          Dr. Debasis Das selected as <strong class="highText">program committee member of CODS-COMAD 2022</strong> (The ACM India Joint International Conference 
-          on Data Science & Management of Data (CODS-COMAD))[ https://cods-comad.in/]
-        </li>
-        <li>
-          Dr. Debasis Das, <strong class="highText">awarded IEEE senior member grade for IEEE Society and IEEE Vehicular Technology Society (VTS)</strong> during 
-          Feb 2021
-        </li>
-      </ol>
-      <br/><br/>
+<div class="pub-container container achv-wrap">
+  <br />
+  <p class="achv-note">
+    Click a <strong>person’s name</strong> to view all achievements related to them.
+  </p>
+
+  <!-- ======= Name Tabs ======= -->
+  <ul class="nav nav-pills person-tabs flex-wrap gap-2" id="personTabs" role="tablist">
+
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="tab-debasis" data-bs-toggle="tab" data-bs-target="#pane-debasis"
+        type="button" role="tab" aria-controls="pane-debasis" aria-selected="true">
+        Dr. Debasis Das
+      </button>
+    </li>
+
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="tab-ashi" data-bs-toggle="tab" data-bs-target="#pane-ashi"
+        type="button" role="tab" aria-controls="pane-ashi" aria-selected="false">
+        Ashi Gupta
+      </button>
+    </li>
+
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="tab-shreyansh" data-bs-toggle="tab" data-bs-target="#pane-shreyansh"
+        type="button" role="tab" aria-controls="pane-shreyansh" aria-selected="false">
+        Shreyansh Sharma
+      </button>
+    </li>
+
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="tab-ankur" data-bs-toggle="tab" data-bs-target="#pane-ankur"
+        type="button" role="tab" aria-controls="pane-ankur" aria-selected="false">
+        Ankur Nahar
+      </button>
+    </li>
+
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="tab-jayant" data-bs-toggle="tab" data-bs-target="#pane-jayant"
+        type="button" role="tab" aria-controls="pane-jayant" aria-selected="false">
+        Jayant Vyas
+      </button>
+    </li>
+
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="tab-bhumika" data-bs-toggle="tab" data-bs-target="#pane-bhumika"
+        type="button" role="tab" aria-controls="pane-bhumika" aria-selected="false">
+        Bhumika
+      </button>
+    </li>
+
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="tab-shruti" data-bs-toggle="tab" data-bs-target="#pane-shruti"
+        type="button" role="tab" aria-controls="pane-shruti" aria-selected="false">
+        Shruti Sureshan
+      </button>
+    </li>
+
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="tab-lokendra" data-bs-toggle="tab" data-bs-target="#pane-lokendra"
+        type="button" role="tab" aria-controls="pane-lokendra" aria-selected="false">
+        Lokendra Vishwakarma
+      </button>
+    </li>
+
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="tab-amritesh" data-bs-toggle="tab" data-bs-target="#pane-amritesh"
+        type="button" role="tab" aria-controls="pane-amritesh" aria-selected="false">
+        Amritesh Kumar
+      </button>
+    </li>
+
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="tab-nandini" data-bs-toggle="tab" data-bs-target="#pane-nandini"
+        type="button" role="tab" aria-controls="pane-nandini" aria-selected="false">
+        Nandini Saini
+      </button>
+    </li>
+
+  </ul>
+
+  <!-- ======= Tab Contents ======= -->
+  <div class="tab-content mt-3" id="personTabsContent">
+
+    <!-- ===================== Dr. Debasis Das ===================== -->
+    <div class="tab-pane fade show active" id="pane-debasis" role="tabpanel" aria-labelledby="tab-debasis">
+      <div class="accordion achv-acc" id="acc-debasis">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="h-debasis-2025">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#c-debasis-2025" aria-expanded="true" aria-controls="c-debasis-2025">
+              2025 Highlights
+            </button>
+          </h2>
+          <div id="c-debasis-2025" class="accordion-collapse collapse show" aria-labelledby="h-debasis-2025"
+            data-bs-parent="#acc-debasis">
+            <div class="accordion-body">
+              <ul>
+                <li>
+                  <span class="badge-yr badge-2025">2025</span>
+                  Awarded <strong>DST–NSF Project</strong>, supported by <strong>NSF (USA)</strong> and <strong>DST (India)</strong>.
+                </li>
+                <li>
+                  <span class="badge-yr badge-2025">2025</span>
+                  Received <strong>NSTC Research Award</strong>, supported by <strong>NSTC</strong> and <strong>NSYSU</strong>, Taiwan.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="h-debasis-other">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#c-debasis-other" aria-expanded="false" aria-controls="c-debasis-other">
+              Other Recognitions & Professional Service
+            </button>
+          </h2>
+          <div id="c-debasis-other" class="accordion-collapse collapse" aria-labelledby="h-debasis-other"
+            data-bs-parent="#acc-debasis">
+            <div class="accordion-body">
+              <ul>
+                <li><span class="badge-yr badge-2024">2024</span> Young Researcher Award (Engineering), IIT Jodhpur.</li>
+                <li><span class="badge-yr badge-2024">2024</span> World’s Top 2% Scientists, Stanford/Elsevier framework.</li>
+                <li><span class="badge-yr badge-2022">2022</span> BRICS Young Scientist Award, BRICS Young Scientists Conclave (Govt. of India).</li>
+                <li><span class="badge-yr badge-2021">2021</span> International Mobility Research Grant Award, IIT Jodhpur.</li>
+                <li><span class="badge-yr badge-2020">2016–2020</span> Early Career Research (ECR) Award, SERB (DST), Govt. of India.</li>
+                <li><span class="badge-yr badge-2021">Feb 2021</span> IEEE Senior Member grade (IEEE &amp; IEEE VTS).</li>
+                <li>Visiting Scholar, University of Missouri–Kansas City (UMKC), USA.</li>
+                <li><span class="badge-yr badge-2015">2015</span> Best Paper Award, ICFCC 2015, NTU Singapore.</li>
+                <li><span class="badge-yr badge-2019">2019</span> Best Paper Award, IEEE ICOIN 2019, Kuala Lumpur, Malaysia.</li>
+                <li>Poster Chair, ACM ICDCN 2022 (IIIT Delhi, India).</li>
+                <li>Guest Editor, International Journal of Distributed Sensor Networks (IJDSN), 2020.</li>
+                <li>Expert Committee Member (Networks), Rajasthan ILD Skills University (RISU), 2019.</li>
+                <li>Session Chair, IEEE APCC 2019 (Track 2: Enabling Technologies for Smart Cities).</li>
+                <li>Program Committee Member, CODS-COMAD 2022.</li>
+                <li><span class="badge-yr badge-2022">2022</span> International Travel Support (ITS) Award, SERB.</li>
+                <li><span class="badge-yr badge-2021">2021</span> IEEE VTS Senior Member Award-2021.</li>
+                <li><span class="badge-yr badge-2021">2020–21</span> International Research Mobility Grant, IIT Jodhpur.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
+
+    <!-- ===================== Ashi Gupta ===================== -->
+    <div class="tab-pane fade" id="pane-ashi" role="tabpanel" aria-labelledby="tab-ashi">
+      <div class="accordion achv-acc" id="acc-ashi">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="h-ashi">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#c-ashi" aria-expanded="true" aria-controls="c-ashi">
+              Achievements
+            </button>
+          </h2>
+          <div id="c-ashi" class="accordion-collapse collapse show" aria-labelledby="h-ashi" data-bs-parent="#acc-ashi">
+            <div class="accordion-body">
+              <ul>
+                <li><span class="badge-yr badge-2024">Dec 2024</span> Awarded <strong class="highText">Registration &amp; Travel Grant</strong> — IndoML Graduate Forum, BITS Pilani (Goa Campus).</li>
+                <li><span class="badge-yr badge-2024">Nov 2024</span> Selected <strong class="highText">to attend &amp; present</strong> — National Innovation Awards 2024, PIET Samalkha.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== Shreyansh Sharma ===================== -->
+    <div class="tab-pane fade" id="pane-shreyansh" role="tabpanel" aria-labelledby="tab-shreyansh">
+      <div class="accordion achv-acc" id="acc-shreyansh">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="h-shreyansh">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#c-shreyansh" aria-expanded="true" aria-controls="c-shreyansh">
+              Achievements
+            </button>
+          </h2>
+          <div id="c-shreyansh" class="accordion-collapse collapse show" aria-labelledby="h-shreyansh"
+            data-bs-parent="#acc-shreyansh">
+            <div class="accordion-body">
+              <ul>
+                <li>Received <strong class="highText">Best Poster Award</strong> — National Workshop on Mobile Device &amp; Application Security, IIT Jammu.</li>
+                <li>Winner of <strong class="highText">Name of the International Relations Newsletter</strong> — International Relations Office, IIT Jodhpur.</li>
+                <li>Paper accepted for presentation — <strong class="highText">ACM ARCS 2024</strong> with Registration &amp; Travel Grant (with Ankur Nahar, Lokendra Vishwakarma).</li>
+                <li>Received <strong class="highText">Registration &amp; Travel Grant</strong> — IndoML 2024, BITS Pilani.</li>
+                <li><span class="badge-yr badge-2023">Jan 2023</span> Registration &amp; Travel Grant — CODS-COMAD 2023 (with Jayant Vyas, Shruti Sureshan).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== Ankur Nahar ===================== -->
+    <div class="tab-pane fade" id="pane-ankur" role="tabpanel" aria-labelledby="tab-ankur">
+      <div class="accordion achv-acc" id="acc-ankur">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="h-ankur">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#c-ankur" aria-expanded="true" aria-controls="c-ankur">
+              Achievements
+            </button>
+          </h2>
+          <div id="c-ankur" class="accordion-collapse collapse show" aria-labelledby="h-ankur" data-bs-parent="#acc-ankur">
+            <div class="accordion-body">
+              <ul>
+                <li><span class="badge-yr badge-2023">2023</span> Selected as <strong class="highText">BRICS Young Scientist 2023</strong> — BRICS Young Scientist Conclave, South Africa.</li>
+                <li><span class="badge-yr badge-2023">2023</span> Received <strong class="highText">International Travel Support (ITS) Award</strong> — SERB, Govt. of India.</li>
+                <li><span class="badge-yr badge-2023">2023</span> Selected for <strong class="highText">ACM India Anveshan Setu Fellowship</strong> (under guidance of Dr. Debasis Das).</li>
+                <li><span class="badge-yr badge-2023">2023</span> Registration &amp; Travel Grant — <strong class="highText">CCGrid 2023</strong> (with Lokendra Vishwakarma, Amritesh Kumar).</li>
+                <li><span class="badge-yr badge-2023">2023</span> Registration &amp; Travel Grant — <strong class="highText">ACM ICDCN 2023</strong> (with Amritesh Kumar).</li>
+                <li><span class="badge-yr badge-2022">2022</span> Student grant — <strong class="highText">IEEE LCN 2022</strong>.</li>
+                <li><span class="badge-yr badge-2022">2022</span> Student grant — <strong class="highText">IEEE INFOCOM 2022</strong> (with Amritesh Kumar).</li>
+                <li><span class="badge-yr badge-2021">2021</span> Student grants — <strong class="highText">USENIX ATC &amp; USENIX Security 2021</strong> (with Lokendra Vishwakarma).</li>
+                <li><span class="badge-yr badge-2020">2020</span> Received <strong class="highText">ACM India Travel Award</strong> — IFIP Networking 2020, Paris, France.</li>
+                <li><span class="badge-yr badge-2024">2024</span> ACM ARCS 2024 Paper accepted with Registration &amp; Travel Grant (with Shreyansh Sharma, Lokendra Vishwakarma).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== Jayant Vyas ===================== -->
+    <div class="tab-pane fade" id="pane-jayant" role="tabpanel" aria-labelledby="tab-jayant">
+      <div class="accordion achv-acc" id="acc-jayant">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="h-jayant">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#c-jayant" aria-expanded="true" aria-controls="c-jayant">
+              Achievements
+            </button>
+          </h2>
+          <div id="c-jayant" class="accordion-collapse collapse show" aria-labelledby="h-jayant" data-bs-parent="#acc-jayant">
+            <div class="accordion-body">
+              <ul>
+                <li><span class="badge-yr badge-2023">2023</span> Received <strong class="highText">IEEE VTS Student Travel Grant</strong> — IEEE VTC 2023-Fall, Hong Kong.</li>
+                <li><span class="badge-yr badge-2023">2023</span> Selected as <strong class="highText">Session Chair</strong> — Vehicular Electronics Track, IEEE VTC 2023-Fall.</li>
+                <li><span class="badge-yr badge-2023">May–Nov 2023</span> Research Internship — <strong class="highText">R&amp;D Specialist, Accenture Labs Bangalore</strong>.</li>
+                <li><span class="badge-yr badge-2023">Feb 2023</span> <strong class="highText">Best Poster Award</strong> (1st position) — Industry Day 2023, IIT Jodhpur.</li>
+                <li><span class="badge-yr badge-2023">Jan 2023</span> Registration &amp; Travel Grant — CODS-COMAD 2023 (with Shreyansh Sharma, Shruti Sureshan).</li>
+                <li><span class="badge-yr badge-2022">Dec 2022</span> Registration &amp; Travel Grant — IndoML 2022 (with Bhumika, Shreyansh Sharma, Nandini Saini).</li>
+                <li><span class="badge-yr badge-2021">2021</span> Selected for <strong class="highText">ACM India Anveshan Setu Fellowship</strong>, 2021.</li>
+                <li><span class="badge-yr badge-2022">2022</span> Proposal accepted — <strong class="highText">Smart Cities Innovation Competition (SCIC)</strong> (with Bhumika).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== Bhumika ===================== -->
+    <div class="tab-pane fade" id="pane-bhumika" role="tabpanel" aria-labelledby="tab-bhumika">
+      <div class="accordion achv-acc" id="acc-bhumika">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="h-bhumika">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#c-bhumika" aria-expanded="true" aria-controls="c-bhumika">
+              Achievements
+            </button>
+          </h2>
+          <div id="c-bhumika" class="accordion-collapse collapse show" aria-labelledby="h-bhumika"
+            data-bs-parent="#acc-bhumika">
+            <div class="accordion-body">
+              <ul>
+                <li><span class="badge-yr badge-2023">Jul 2023</span> Travel grant — <strong class="highText">ACM India Grad Cohort 2023</strong>, IISc Bangalore, India.</li>
+                <li><span class="badge-yr badge-2023">Jun–Jul 2023</span> Selected — <strong class="highText">Climate Change AI Summer School 2023</strong> (Virtual).</li>
+                <li><span class="badge-yr badge-2022">2022</span> Student registration grant — <strong class="highText">ECML PKDD 2022</strong>.</li>
+                <li><span class="badge-yr badge-2022">2022</span> Poster presentation — <strong class="highText">Purdue Engineering Virtual Graduate Showcase 2022</strong> (RNFSL: Relation Network for Anomaly Detection).</li>
+                <li><span class="badge-yr badge-2022">2022</span> Proposal accepted — <strong class="highText">Smart Cities Innovation Competition (SCIC)</strong> (with Jayant Vyas).</li>
+                <li><span class="badge-yr badge-2022">Dec 2022</span> Registration &amp; Travel Grant — IndoML 2022 (with Jayant Vyas, Shreyansh Sharma, Nandini Saini).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== Shruti Sureshan ===================== -->
+    <div class="tab-pane fade" id="pane-shruti" role="tabpanel" aria-labelledby="tab-shruti">
+      <div class="accordion achv-acc" id="acc-shruti">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="h-shruti">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#c-shruti" aria-expanded="true" aria-controls="c-shruti">
+              Achievements
+            </button>
+          </h2>
+          <div id="c-shruti" class="accordion-collapse collapse show" aria-labelledby="h-shruti"
+            data-bs-parent="#acc-shruti">
+            <div class="accordion-body">
+              <ul>
+                <li><span class="badge-yr badge-2023">Jan 2023</span> Registration &amp; Travel Grant — CODS-COMAD 2023 (with Jayant Vyas, Shreyansh Sharma).</li>
+                <li><span class="badge-yr badge-2023">Jan 2023</span> 2-page extended abstract accepted — CODS-COMAD 2023 (Young Research Symposium): “Few-Shot Learning based Anomaly Detection in Security Applications.”</li>
+                <li><span class="badge-yr badge-2022">2022</span> Poster presentation — <strong class="highText">Purdue Engineering Virtual Graduate Showcase 2022</strong> (RNFSL: Relation Network for Anomaly Detection).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== Lokendra Vishwakarma ===================== -->
+    <div class="tab-pane fade" id="pane-lokendra" role="tabpanel" aria-labelledby="tab-lokendra">
+      <div class="accordion achv-acc" id="acc-lokendra">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="h-lokendra">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#c-lokendra" aria-expanded="true" aria-controls="c-lokendra">
+              Achievements
+            </button>
+          </h2>
+          <div id="c-lokendra" class="accordion-collapse collapse show" aria-labelledby="h-lokendra"
+            data-bs-parent="#acc-lokendra">
+            <div class="accordion-body">
+              <ul>
+                <li><span class="badge-yr badge-2024">2024</span> ACM ARCS 2024 Paper accepted with Registration &amp; Travel Grant (with Shreyansh Sharma, Ankur Nahar).</li>
+                <li><span class="badge-yr badge-2023">2023</span> Registration &amp; Travel Grant — <strong class="highText">CCGrid 2023</strong> (with Ankur Nahar, Amritesh Kumar).</li>
+                <li><span class="badge-yr badge-2021">2021</span> Student grant — <strong class="highText">ACM SIGMETRICS 2021</strong>.</li>
+                <li><span class="badge-yr badge-2021">2021</span> Student grants — <strong class="highText">USENIX ATC &amp; USENIX Security 2021</strong> (with Ankur Nahar).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== Amritesh Kumar ===================== -->
+    <div class="tab-pane fade" id="pane-amritesh" role="tabpanel" aria-labelledby="tab-amritesh">
+      <div class="accordion achv-acc" id="acc-amritesh">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="h-amritesh">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#c-amritesh" aria-expanded="true" aria-controls="c-amritesh">
+              Achievements
+            </button>
+          </h2>
+          <div id="c-amritesh" class="accordion-collapse collapse show" aria-labelledby="h-amritesh"
+            data-bs-parent="#acc-amritesh">
+            <div class="accordion-body">
+              <ul>
+                <li><span class="badge-yr badge-2023">2023</span> Registration &amp; Travel Grant — <strong class="highText">CCGrid 2023</strong> (with Lokendra Vishwakarma, Ankur Nahar).</li>
+                <li><span class="badge-yr badge-2023">2023</span> Registration &amp; Travel Grant — <strong class="highText">ACM ICDCN 2023</strong> (with Ankur Nahar).</li>
+                <li><span class="badge-yr badge-2022">2022</span> Student grant — <strong class="highText">IEEE INFOCOM 2022</strong> (with Ankur Nahar).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== Nandini Saini ===================== -->
+    <div class="tab-pane fade" id="pane-nandini" role="tabpanel" aria-labelledby="tab-nandini">
+      <div class="accordion achv-acc" id="acc-nandini">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="h-nandini">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#c-nandini" aria-expanded="true" aria-controls="c-nandini">
+              Achievements
+            </button>
+          </h2>
+          <div id="c-nandini" class="accordion-collapse collapse show" aria-labelledby="h-nandini"
+            data-bs-parent="#acc-nandini">
+            <div class="accordion-body">
+              <ul>
+                <li><span class="badge-yr badge-2022">Dec 2022</span> Registration &amp; Travel Grant — IndoML 2022 (with Jayant Vyas, Bhumika, Shreyansh Sharma).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <br /><br />
+</div>
+
 
 
      <!-- <div class="breadcrumbs" data-aos="fade-in">
