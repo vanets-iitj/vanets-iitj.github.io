@@ -130,7 +130,16 @@
   min-height: 150px; /* ensure equal heights if needed */
 }
 
-
+  /* People page: smaller profile image, consistent look */
+.member .people-photo{
+  width: 220px;          /* change to 180/200/240 as you like */
+  height: 220px;
+  object-fit: cover;     /* crops to keep ratio nice */
+  border-radius: 10px;   /* matches modern card style */
+  display: block;
+  margin: 0 auto 12px;   /* center + spacing */
+}
+  
   .member-compact img {
     width: 80px;
     height: 80px;
@@ -679,6 +688,7 @@
 </body>
 
 </html>
+
 
 
 
